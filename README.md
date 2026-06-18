@@ -1,65 +1,65 @@
 # 🧭 Affiliate-tools research agent (travel blogs)
 
-> Русская версия. English: [README.en.md](README.en.md).
+> English (default). Русская версия: [README.ru.md](README.ru.md).
 
-Локальный агент для **Claude Code**: находит тревел-блоги по заданной стране и собирает,
-какими **аффилиатными инструментами монетизации** они пользуются (виджеты бронирования,
-CTA-кнопки, инлайн-карточки/ссылки на OTA, купоны/промо, попапы, sticky, JS-интеграции
-Stay22/Travelpayouts/Klook/GetYourGuide и т.п.). Делает **скриншоты самих элементов** и
-выдаёт **HTML-отчёт** (вывод всегда в HTML), который **пополняется пошагово** — блог за блогом.
+A local agent for **Claude Code**: finds travel blogs for a given country and collects which
+**affiliate monetization tools** they use (booking widgets, CTA buttons, inline hotel/tour cards,
+OTA links, coupons/promos, popups, sticky bars, JS integrations from Stay22 / Travelpayouts / Klook /
+GetYourGuide, etc.). It screenshots the **actual elements** and outputs an **HTML report** (output is
+always HTML) that is built **step-by-step** — blog by blog.
 
-## Как пользоваться (целевой сценарий)
-1. Скачай/склонируй эту папку (или открой её из облака) и открой в **Claude Code**.
-2. Один раз поставь зависимости:
+## How to use (target flow)
+1. Download/clone this folder (or open it from cloud storage) and open it in **Claude Code**.
+2. Install dependencies once:
    ```bash
    npm run setup        # npm install + npx playwright install chromium
    ```
-   (нужен установленный Node.js 18+. Системный Chrome не обязателен — Playwright поставит Chromium.)
-3. **Playwright MCP подключается сам**: в папке лежит `.mcp.json`, и при открытии её в Claude Code
-   агент предложит подключить сервер `playwright` — согласись. (Ручной аналог, если нужно:
-   `claude mcp add playwright npx '@playwright/mcp@latest'`.) Основной рабочий путь — `scan-tools.js`;
-   MCP нужен для интерактивного вождения браузера.
-4. Просто напиши Клоду, например:
-   > **сделай анализ по аффилиатным инструментам на тревел-блогах по Японии**
+   (Needs Node.js 18+. A system Chrome is optional — Playwright installs Chromium.)
+3. **Playwright MCP connects itself**: the folder ships a `.mcp.json`, so when you open it in Claude Code
+   the agent will offer to connect the `playwright` server — accept it. (Manual equivalent if needed:
+   `claude mcp add playwright npx '@playwright/mcp@latest'`.) The main workhorse is `scan-tools.js`;
+   the MCP is for interactively driving the browser.
+4. Just tell Claude, e.g.:
+   > **do an analysis of affiliate tools on travel blogs for Japan**
 
-   Дальше всё произойдёт само: агент найдёт блоги (WebSearch), просканирует их через Playwright,
-   снимет валидные скриншоты инструментов и соберёт HTML. Ты получишь файл `*-blogs.html`,
-   который растёт по мере анализа (можно открыть и обновлять прямо во время работы).
+   Everything happens automatically: the agent finds blogs (WebSearch), scans them via Playwright,
+   captures validated tool screenshots, and assembles the HTML. You get a `<country>-blogs.html`
+   file that grows as the analysis proceeds (you can open and refresh it while it runs).
 
-   **По умолчанию браузер НЕ всплывает** (headless) — окна не будут перекрывать твою работу.
-   Если нужно показать окно (иногда пробивает больше антибота) — запусти с `HEADED=1` (см. ниже).
+   **By default the browser does NOT pop up** (headless) — no windows covering your work.
+   If you need to show the window (sometimes beats more anti-bot) — run with `HEADED=1` (see below).
 
-## Что получится
-- `<country>-blogs.html` — главный отчёт: таблица **# · Блог · Описание · Инструменты ·
-  Скриншоты инструментов** со встроенными (base64) превью. Открывается в любом браузере.
-- `<country>-manifest.json` — сырые данные детекции (рядом с HTML).
-- Скриншоты элементов — в `tools/`.
+## What you get
+- `<country>-blogs.html` — the main report: a table **# · Blog · Description · Tools ·
+  Tool screenshots** with embedded (base64) thumbnails. Opens in any browser.
+- `<country>-manifest.json` — raw detection data (next to the HTML).
+- Element screenshots — in `tools/`.
 
-## Команды (агент вызывает их сам; можно и руками)
+## Commands (the agent runs these itself; you can too)
 ```bash
-# 1) targets-<country>.json готовит агент: [{ "slug","name","home","seed" }, ...]
-# 2) скан + пошаговая сборка HTML (locale: zh-TW / ja-JP / ko-KR / en-US / ...):
-#    по умолчанию HEADLESS — окно браузера НЕ появляется:
+# 1) the agent prepares targets-<country>.json: [{ "slug","name","home","seed" }, ...]
+# 2) scan + step-by-step HTML build (locale: zh-TW / ja-JP / ko-KR / en-US / ...):
+#    headless by default — NO browser window appears:
 node scan-tools.js targets-japan.json japan ja-JP
-# показать окно (если сайт блокирует headless — больше шанс пробить антибот):
+# show the window (if a site blocks headless — better chance against anti-bot):
 HEADED=1 node scan-tools.js targets-japan.json japan ja-JP
-# отдельно пересобрать HTML из манифеста:
+# rebuild the HTML from the manifest separately:
 node gen-html.js japan-manifest.json japan-blogs.html "Japan travel blogs — affiliate tools"
 ```
 
-### Динамические виджеты под анти-бот (Travelpayouts Emerald, Stay22 и т.п.)
-Часть монетизац-блоков (напр. TP **Emerald**, Shadow-DOM, грузится `emrld.cc`) отдаётся только
-доверенной сессии и **не рендерится под автоматизацией**. Их присутствие всё равно фиксируется
-как «JS-интеграция». Чтобы попробовать снять и сам блок — запусти скан через **CDP к своему
-Chrome** (прогретый профиль):
+### Dynamic anti-bot widgets (Travelpayouts Emerald, Stay22, etc.)
+Some monetization blocks (e.g. TP **Emerald**, Shadow-DOM, loaded by `emrld.cc`) are served only to a
+trusted session and **do not render under automation**. Their presence is still recorded as a
+"JS integration". To try capturing the rendered block itself, run the scan via **CDP against your own
+Chrome** (a warmed profile):
 ```bash
-# 1) подними копию профиля с debug-портом (на дефолтном профиле Chrome ≥136 порт блокирует):
+# 1) bring up a profile copy with a debug port (Chrome ≥136 blocks the port on the default profile):
 cp -R "<your Chrome profile>" /tmp/ch-warm
 "/path/to/Google Chrome" --remote-debugging-port=9222 --user-data-dir=/tmp/ch-warm
-# 2) скан через него:
+# 2) scan through it:
 CDP_URL=http://localhost:9222 node scan-tools.js targets-japan.json japan ja-JP
 ```
-Даже так срабатывает не всегда (TP детектит бота) — что не поймалось, снимай вручную.
+Even then it does not always work (TP detects the bot) — whatever isn't captured, screenshot it manually.
 
-Полная инструкция агента и весь контекст (что ищем, источники, инструменты, валидация, хук,
-генерация) — в `.claude/skills/tp-affiliate-tools-research/SKILL.md`.
+The full agent instruction and all the context (what we search for, sources, tools, validation, the hook,
+generation) is in `.claude/skills/tp-affiliate-tools-research/SKILL.md` (English: `SKILL.en.md`).

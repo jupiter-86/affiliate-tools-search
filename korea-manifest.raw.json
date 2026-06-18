@@ -1,0 +1,2818 @@
+[
+  {
+    "slug": "jisikchannel",
+    "name": "지식채널 (ko, местный)",
+    "home": "https://icems2021.com/",
+    "pages": [
+      {
+        "slug": "jisikchannel",
+        "name": "지식채널 (ko, местный)",
+        "url": "https://icems2021.com/",
+        "page_type": "home",
+        "tools": [
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «트립닷컴 할인코드»",
+            "ota": null,
+            "w": 108,
+            "h": 18,
+            "file": "tools/jisikchannel-p0-fb.png",
+            "bytes": 1878
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "jisikchannel",
+        "name": "지식채널 (ko, местный)",
+        "url": "https://icems2021.com/2026/06/18/%ea%b0%a4%eb%9f%ad%ec%8b%9c-s23-s23-s23-%ec%9a%b8%ed%8a%b8%eb%9d%bc-%ec%82%ac%ec%96%91-%eb%b9%84%ea%b5%90-%ec%86%94%ec%a7%81-%ed%9b%84%ea%b8%b0/",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «트립닷컴 할인코드»",
+            "ota": null,
+            "w": 108,
+            "h": 18,
+            "file": "tools/jisikchannel-p1-fb.png",
+            "bytes": 1878
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "jisikchannel",
+        "name": "지식채널 (ko, местный)",
+        "url": "https://icems2021.com/2026/06/06/%ED%81%B4%EB%A3%A9-%EC%84%B8%EC%9D%BC%EB%A1%9C-%EA%B0%80%EC%9E%A5-%EC%A0%80%EB%A0%B4%ED%95%98%EA%B2%8C-%EC%97%AC%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-7%EA%B0%80%EC%A7%80/",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «클룩 할인코드»",
+            "ota": "Klook",
+            "w": 740,
+            "h": 122,
+            "file": "tools/jisikchannel-p2-0.png",
+            "bytes": 30312
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "blackcong",
+    "name": "까만콩이야기 (ko, местный, Blogger)",
+    "home": "https://www.blackcong.com/",
+    "pages": [
+      {
+        "slug": "blackcong",
+        "name": "까만콩이야기 (ko, местный, Blogger)",
+        "url": "https://www.blackcong.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "blackcong",
+        "name": "까만콩이야기 (ko, местный, Blogger)",
+        "url": "https://www.blackcong.com/2025/03/esim-vpn.html",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "blackcong",
+        "name": "까만콩이야기 (ko, местный, Blogger)",
+        "url": "https://www.blackcong.com/2026/06/blog-post_17.html",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "blackcong",
+        "name": "까만콩이야기 (ko, местный, Blogger)",
+        "url": "https://www.blackcong.com/2025/05/blog-post_30.html",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      }
+    ]
+  },
+  {
+    "slug": "hazistar",
+    "name": "Haji's journey (ko, местный)",
+    "home": "https://hazistar.com/",
+    "pages": [
+      {
+        "slug": "hazistar",
+        "name": "Haji's journey (ko, местный)",
+        "url": "https://hazistar.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "ERR: page.goto: net::ERR_NAME_NOT_RESOLVED at https://hazistar.com/\nCall log:\n  - navigating to \"https://hazistar.com/\", wait"
+      }
+    ]
+  },
+  {
+    "slug": "seoarena",
+    "name": "SEO아레나 (ko, местный, Tistory)",
+    "home": "https://seoarenakr.com/",
+    "pages": [
+      {
+        "slug": "seoarena",
+        "name": "SEO아레나 (ko, местный, Tistory)",
+        "url": "https://seoarenakr.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "seoarena",
+        "name": "SEO아레나 (ko, местный, Tistory)",
+        "url": "https://seoarenakr.com/entry/%EB%84%A4%EC%9D%B4%EB%B2%84-%ED%81%B4%EB%A6%BD-%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0-5%EA%B8%B0-%ED%83%88%EB%9D%BD-%ED%9B%84%EA%B8%B0-%ED%95%A9%EA%B2%A9-%EA%B3%84%EC%A0%95-%EA%B5%AC%EB%8F%85%EC%9E%90-%EC%88%98",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      }
+    ]
+  },
+  {
+    "slug": "dailymoneylog",
+    "name": "Daily Money Log (ko, местный,재테크/여행)",
+    "home": "https://dailymoney-log.com/",
+    "pages": [
+      {
+        "slug": "dailymoneylog",
+        "name": "Daily Money Log (ko, местный,재테크/여행)",
+        "url": "https://dailymoney-log.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "dailymoneylog",
+        "name": "Daily Money Log (ko, местный,재테크/여행)",
+        "url": "https://dailymoney-log.com/salary-calculator/",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "dailymoneylog",
+        "name": "Daily Money Log (ko, местный,재테크/여행)",
+        "url": "https://dailymoney-log.com/childcare-salary-calculator/",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "dailymoneylog",
+        "name": "Daily Money Log (ko, местный,재테크/여행)",
+        "url": "https://dailymoney-log.com/unemployment-calculator/",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "dailymoneylog",
+        "name": "Daily Money Log (ko, местный,재테크/여행)",
+        "url": "https://dailymoney-log.com/accommodation-platform-comparison-guide/",
+        "page_type": "itinerary/guide",
+        "tools": [
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «야놀자(NOL) 공식 앱»",
+            "ota": "Yanolja",
+            "w": 630,
+            "h": 69,
+            "file": "tools/dailymoneylog-p4-0.png",
+            "bytes": 8654
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "benefitshub",
+    "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+    "home": "https://benefitshub.co.kr/",
+    "pages": [
+      {
+        "slug": "benefitshub",
+        "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+        "url": "https://benefitshub.co.kr/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "benefitshub",
+        "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+        "url": "https://benefitshub.co.kr/fashion-coupon/",
+        "page_type": "coupon",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "benefitshub",
+        "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+        "url": "https://benefitshub.co.kr/sw-coupon/",
+        "page_type": "coupon",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "benefitshub",
+        "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+        "url": "https://benefitshub.co.kr/myrealtrip-coupon/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "cta",
+            "label": "CTA «럭키 글라이드»",
+            "ota": "Trip.com",
+            "w": 94,
+            "h": 31,
+            "file": "tools/benefitshub-p3-0.png",
+            "bytes": 2329
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «마이리얼트립 최저가 항공권 검색»",
+            "ota": "Trip.com",
+            "w": 271,
+            "h": 42,
+            "file": "tools/benefitshub-p3-1.png",
+            "bytes": 5721
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «마이리얼트립 차액 환불 신청하기»",
+            "ota": "Trip.com",
+            "w": 734,
+            "h": 32,
+            "file": "tools/benefitshub-p3-2.png",
+            "bytes": 4205
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «마이리얼트립»",
+            "ota": "Rakuten",
+            "w": 775,
+            "h": 62,
+            "file": "tools/benefitshub-p3-3.png",
+            "bytes": 19421
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «진에어»",
+            "ota": null,
+            "w": 785,
+            "h": 242,
+            "file": "tools/benefitshub-p3-4.png",
+            "bytes": 30764
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «뉴욕»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-5.png",
+            "bytes": 5531
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «토론토»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-6.png",
+            "bytes": 5898
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «벤쿠버»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-7.png",
+            "bytes": 6279
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «퍼스»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-8.png",
+            "bytes": 6630
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «시드니»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-9.png",
+            "bytes": 6876
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «맬버른»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-10.png",
+            "bytes": 6740
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «칸쿤»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-11.png",
+            "bytes": 5854
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «독일»",
+            "ota": null,
+            "w": 785,
+            "h": 334,
+            "file": "tools/benefitshub-p3-12.png",
+            "bytes": 33726
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «싱가포르»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-13.png",
+            "bytes": 7221
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «다낭»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-14.png",
+            "bytes": 6316
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «나트랑»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-15.png",
+            "bytes": 6521
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «세부»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-16.png",
+            "bytes": 6434
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «보홀»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-17.png",
+            "bytes": 6679
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «방콕»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-18.png",
+            "bytes": 6380
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «파타야»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-19.png",
+            "bytes": 6753
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «치앙마이»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-20.png",
+            "bytes": 3576
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «제주도»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-21.png",
+            "bytes": 7175
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «홍콩»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-22.png",
+            "bytes": 6347
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «대만»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-23.png",
+            "bytes": 5733
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «나고야»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-24.png",
+            "bytes": 7964
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «교통 쿠폰»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-25.png",
+            "bytes": 8019
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «롯데카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-26.png",
+            "bytes": 7485
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «삼성카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-27.png",
+            "bytes": 7574
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «하나카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-28.png",
+            "bytes": 7398
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «국민카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-29.png",
+            "bytes": 7426
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «농협카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-30.png",
+            "bytes": 7574
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «우리카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-31.png",
+            "bytes": 7429
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «현대카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-32.png",
+            "bytes": 7203
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «IBK카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 67,
+            "file": "tools/benefitshub-p3-33.png",
+            "bytes": 3569
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «BC카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-34.png",
+            "bytes": 5863
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «삼성카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-35.png",
+            "bytes": 6032
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «유니온페이 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-36.png",
+            "bytes": 6055
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «하나카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-37.png",
+            "bytes": 5876
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «국민카드 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-38.png",
+            "bytes": 5854
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → myrealt.rip «카카오페이 할인»",
+            "ota": null,
+            "w": 784,
+            "h": 44,
+            "file": "tools/benefitshub-p3-39.png",
+            "bytes": 6237
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "benefitshub",
+        "name": "혜택창고 (ko, местный, 쿠폰/여행딜)",
+        "url": "https://benefitshub.co.kr/klook-promo-code/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "cta",
+            "label": "CTA «혜택모음 쿠폰 확인»",
+            "ota": "Klook",
+            "w": 184,
+            "h": 42,
+            "file": "tools/benefitshub-p4-0.png",
+            "bytes": 4225
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «상하이 디즈니랜드 할인쿠폰 확인»",
+            "ota": "Klook",
+            "w": 271,
+            "h": 42,
+            "file": "tools/benefitshub-p4-1.png",
+            "bytes": 5619
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «국내여행 특가모음 확인»",
+            "ota": "Klook",
+            "w": 211,
+            "h": 42,
+            "file": "tools/benefitshub-p4-2.png",
+            "bytes": 4734
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «상하이 디즈니랜드»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-3.png",
+            "bytes": 4691
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «일본 ON 세일»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-4.png",
+            "bytes": 4188
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «대만 ON 세일»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-5.png",
+            "bytes": 4311
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «홍콩 ON 세일»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-6.png",
+            "bytes": 4648
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «상하이 ON 세일»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-7.png",
+            "bytes": 4811
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «클룩 혜택모음»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-8.png",
+            "bytes": 3920
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «국내여행 특가모음»",
+            "ota": "Klook",
+            "w": 784,
+            "h": 41,
+            "file": "tools/benefitshub-p4-9.png",
+            "bytes": 4489
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «클룩»",
+            "ota": "Klook",
+            "w": 775,
+            "h": 154,
+            "file": "tools/benefitshub-p4-10.png",
+            "bytes": 41395
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «고객센터 실시간 채팅하기»",
+            "ota": "Klook",
+            "w": 734,
+            "h": 93,
+            "file": "tools/benefitshub-p4-11.png",
+            "bytes": 10967
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "travista",
+    "name": "트래비스타 (ko, местный, 여행딜)",
+    "home": "https://travista.co.kr/",
+    "pages": [
+      {
+        "slug": "travista",
+        "name": "트래비스타 (ko, местный, 여행딜)",
+        "url": "https://travista.co.kr/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "travista",
+        "name": "트래비스타 (ko, местный, 여행딜)",
+        "url": "https://travista.co.kr/hotels-deals-promo-code/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "cta",
+            "label": "CTA «LP005»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-0.png",
+            "bytes": 1989
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «JUNE15»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-1.png",
+            "bytes": 1767
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «VRLP10»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-2.png",
+            "bytes": 2006
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «OSSEO»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-3.png",
+            "bytes": 2246
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LP08»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-4.png",
+            "bytes": 1790
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «8HC»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-5.png",
+            "bytes": 1621
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «10KBCARD»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-6.png",
+            "bytes": 2611
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «SHINHAN10»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-7.png",
+            "bytes": 2344
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «BC10»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-8.png",
+            "bytes": 1813
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «HANACARD»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-9.png",
+            "bytes": 2391
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «WOORICARD»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-10.png",
+            "bytes": 3007
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «NH10»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-11.png",
+            "bytes": 1583
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LOCA8»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-12.png",
+            "bytes": 2167
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «SSCARD7»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-13.png",
+            "bytes": 2600
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «VISA8»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-14.png",
+            "bytes": 2101
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AMEX8»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-15.png",
+            "bytes": 2161
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «JCBKR20»",
+            "ota": null,
+            "w": 229,
+            "h": 47,
+            "file": "tools/travista-p1-16.png",
+            "bytes": 2457
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «할인 제외 호텔을»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 243,
+            "file": "tools/travista-p1-17.png",
+            "bytes": 27582
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «할인코드 (LP005) 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-18.png",
+            "bytes": 28119
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «할인 제외 호텔»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-19.png",
+            "bytes": 28912
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «할인코드(OSSEO) 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-20.png",
+            "bytes": 31460
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «할인코드 (8HC) 이용약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-21.png",
+            "bytes": 29179
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «국민카드 할인코드 이용약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-22.png",
+            "bytes": 30923
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «신한카드 할인코드 이용약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 243,
+            "file": "tools/travista-p1-23.png",
+            "bytes": 37498
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «하나카드 할인코드 유의사항»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-24.png",
+            "bytes": 28985
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «롯데카드 할인 이용약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-25.png",
+            "bytes": 29366
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «아멕스 할인 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 243,
+            "file": "tools/travista-p1-26.png",
+            "bytes": 32210
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «우리카드 프로모션 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-27.png",
+            "bytes": 29876
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «농협카드 프로모션 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-28.png",
+            "bytes": 29076
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «프로모션 이용 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 213,
+            "file": "tools/travista-p1-29.png",
+            "bytes": 28082
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «호텔스닷컴 약관»",
+            "ota": "Hotels.com",
+            "w": 650,
+            "h": 152,
+            "file": "tools/travista-p1-30.png",
+            "bytes": 24728
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "travista",
+        "name": "트래비스타 (ko, местный, 여행딜)",
+        "url": "https://travista.co.kr/agoda-deals-promo-code/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "cta",
+            "label": "CTA «COUDAL»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-0.png",
+            "bytes": 2235
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LPAGDKR10»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-1.png",
+            "bytes": 2711
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LP12AGD2»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-2.png",
+            "bytes": 2353
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LP10AGD2»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-3.png",
+            "bytes": 2626
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODANEW7»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-4.png",
+            "bytes": 2912
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGD8»",
+            "ota": null,
+            "w": 219,
+            "h": 47,
+            "file": "tools/travista-p2-5.png",
+            "bytes": 2077
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGD2026»",
+            "ota": null,
+            "w": 327,
+            "h": 47,
+            "file": "tools/travista-p2-6.png",
+            "bytes": 2701
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODASALE»",
+            "ota": null,
+            "w": 327,
+            "h": 47,
+            "file": "tools/travista-p2-7.png",
+            "bytes": 2888
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODASPONSORED»",
+            "ota": null,
+            "w": 327,
+            "h": 47,
+            "file": "tools/travista-p2-8.png",
+            "bytes": 4194
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODADEAL5»",
+            "ota": null,
+            "w": 274,
+            "h": 47,
+            "file": "tools/travista-p2-9.png",
+            "bytes": 2989
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODADEAL8»",
+            "ota": null,
+            "w": 274,
+            "h": 47,
+            "file": "tools/travista-p2-10.png",
+            "bytes": 2743
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «AGODAFLIGHT»",
+            "ota": null,
+            "w": 309,
+            "h": 47,
+            "file": "tools/travista-p2-11.png",
+            "bytes": 2841
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «DEALFLY»",
+            "ota": null,
+            "w": 309,
+            "h": 47,
+            "file": "tools/travista-p2-12.png",
+            "bytes": 2019
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «UP15»",
+            "ota": null,
+            "w": 228,
+            "h": 47,
+            "file": "tools/travista-p2-13.png",
+            "bytes": 1674
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «현대카드 할인»",
+            "ota": "Agoda",
+            "w": 243,
+            "h": 47,
+            "file": "tools/travista-p2-14.png",
+            "bytes": 2781
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «마스터카드 할인»",
+            "ota": null,
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-15.png",
+            "bytes": 2802
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «비자카드 할인»",
+            "ota": "Agoda",
+            "w": 287,
+            "h": 47,
+            "file": "tools/travista-p2-16.png",
+            "bytes": 2696
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «신한카드 할인»",
+            "ota": null,
+            "w": 243,
+            "h": 47,
+            "file": "tools/travista-p2-17.png",
+            "bytes": 2758
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «국민카드 할인»",
+            "ota": "Agoda",
+            "w": 184,
+            "h": 47,
+            "file": "tools/travista-p2-18.png",
+            "bytes": 2603
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «토스페이 11% 할인»",
+            "ota": "Agoda",
+            "w": 209,
+            "h": 47,
+            "file": "tools/travista-p2-19.png",
+            "bytes": 3326
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «삼성카드 할인»",
+            "ota": "Agoda",
+            "w": 168,
+            "h": 47,
+            "file": "tools/travista-p2-20.png",
+            "bytes": 2867
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «우리카드 할인»",
+            "ota": null,
+            "w": 180,
+            "h": 47,
+            "file": "tools/travista-p2-21.png",
+            "bytes": 2669
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «하나카드 할인»",
+            "ota": null,
+            "w": 157,
+            "h": 47,
+            "file": "tools/travista-p2-22.png",
+            "bytes": 2697
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «농협카드 할인»",
+            "ota": null,
+            "w": 264,
+            "h": 47,
+            "file": "tools/travista-p2-23.png",
+            "bytes": 2890
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «네이버 페이 할인»",
+            "ota": "Agoda",
+            "w": 147,
+            "h": 74,
+            "file": "tools/travista-p2-24.png",
+            "bytes": 3020
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «카카오페이 할인»",
+            "ota": "Agoda",
+            "w": 242,
+            "h": 47,
+            "file": "tools/travista-p2-25.png",
+            "bytes": 3151
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «제주도 지역 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-26.png",
+            "bytes": 3131
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «싱가포르 패키지 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-27.png",
+            "bytes": 3496
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «한국 겨울 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-28.png",
+            "bytes": 2960
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «필리핀 여행 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-29.png",
+            "bytes": 3269
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «필리핀 새해 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-30.png",
+            "bytes": 3123
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «아부다비 여행 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-31.png",
+            "bytes": 3424
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «몰디브 설날 맞이 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-32.png",
+            "bytes": 3530
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «일본 여행 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-33.png",
+            "bytes": 3090
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «대만 새해 할인»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-34.png",
+            "bytes": 2822
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «중국 아시아 페스티벌»",
+            "ota": "Agoda",
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p2-35.png",
+            "bytes": 3324
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «정오 할인 프로모션»",
+            "ota": "Agoda",
+            "w": 215,
+            "h": 47,
+            "file": "tools/travista-p2-36.png",
+            "bytes": 3344
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «자정 할인 프로모션»",
+            "ota": "Agoda",
+            "w": 215,
+            "h": 47,
+            "file": "tools/travista-p2-37.png",
+            "bytes": 3355
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «심야 할인 프로모션»",
+            "ota": "Agoda",
+            "w": 215,
+            "h": 47,
+            "file": "tools/travista-p2-38.png",
+            "bytes": 3227
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «Payday 할인 프로모션»",
+            "ota": "Agoda",
+            "w": 296,
+            "h": 47,
+            "file": "tools/travista-p2-39.png",
+            "bytes": 3920
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "travista",
+        "name": "트래비스타 (ko, местный, 여행딜)",
+        "url": "https://travista.co.kr/trip-deals-promo-code/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "cta",
+            "label": "CTA «TRIP3»",
+            "ota": null,
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p3-0.png",
+            "bytes": 1790
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «KAKAO12»",
+            "ota": null,
+            "w": 225,
+            "h": 47,
+            "file": "tools/travista-p3-1.png",
+            "bytes": 2306
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «토스 페이 할인»",
+            "ota": null,
+            "w": 237,
+            "h": 47,
+            "file": "tools/travista-p3-2.png",
+            "bytes": 2715
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «TRIPH3»",
+            "ota": null,
+            "w": 192,
+            "h": 47,
+            "file": "tools/travista-p3-3.png",
+            "bytes": 1830
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «LPHOTEL5»",
+            "ota": null,
+            "w": 192,
+            "h": 47,
+            "file": "tools/travista-p3-4.png",
+            "bytes": 2116
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «TRIP66»",
+            "ota": null,
+            "w": 192,
+            "h": 47,
+            "file": "tools/travista-p3-5.png",
+            "bytes": 2092
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «TRIPBEST8»",
+            "ota": null,
+            "w": 208,
+            "h": 47,
+            "file": "tools/travista-p3-6.png",
+            "bytes": 2524
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «TRIPCAR8»",
+            "ota": null,
+            "w": 208,
+            "h": 47,
+            "file": "tools/travista-p3-7.png",
+            "bytes": 2529
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «할인코드 발급»",
+            "ota": null,
+            "w": 208,
+            "h": 47,
+            "file": "tools/travista-p3-8.png",
+            "bytes": 2623
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «VISAHOTEL8»",
+            "ota": null,
+            "w": 318,
+            "h": 47,
+            "file": "tools/travista-p3-9.png",
+            "bytes": 2869
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «VISAF3»",
+            "ota": null,
+            "w": 318,
+            "h": 47,
+            "file": "tools/travista-p3-10.png",
+            "bytes": 2351
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «VISATOUR4»",
+            "ota": null,
+            "w": 318,
+            "h": 47,
+            "file": "tools/travista-p3-11.png",
+            "bytes": 2873
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MAKA20»",
+            "ota": null,
+            "w": 195,
+            "h": 47,
+            "file": "tools/travista-p3-12.png",
+            "bytes": 2230
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MAKA5»",
+            "ota": null,
+            "w": 195,
+            "h": 47,
+            "file": "tools/travista-p3-13.png",
+            "bytes": 1983
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MAKA10»",
+            "ota": null,
+            "w": 195,
+            "h": 47,
+            "file": "tools/travista-p3-14.png",
+            "bytes": 2095
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «SHINHAN8H»",
+            "ota": null,
+            "w": 252,
+            "h": 47,
+            "file": "tools/travista-p3-15.png",
+            "bytes": 2463
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «SHINHAN4F»",
+            "ota": null,
+            "w": 252,
+            "h": 47,
+            "file": "tools/travista-p3-16.png",
+            "bytes": 2282
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «SHINHAN3»",
+            "ota": null,
+            "w": 252,
+            "h": 47,
+            "file": "tools/travista-p3-17.png",
+            "bytes": 2356
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «KBTPH8»",
+            "ota": null,
+            "w": 282,
+            "h": 47,
+            "file": "tools/travista-p3-18.png",
+            "bytes": 2182
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «KBTP3»",
+            "ota": null,
+            "w": 282,
+            "h": 47,
+            "file": "tools/travista-p3-19.png",
+            "bytes": 2017
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «KBTP4»",
+            "ota": null,
+            "w": 282,
+            "h": 47,
+            "file": "tools/travista-p3-20.png",
+            "bytes": 1894
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «WOORICARD06»",
+            "ota": null,
+            "w": 348,
+            "h": 47,
+            "file": "tools/travista-p3-21.png",
+            "bytes": 3690
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «WOORICARD03»",
+            "ota": null,
+            "w": 348,
+            "h": 47,
+            "file": "tools/travista-p3-22.png",
+            "bytes": 3523
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «WOORICARDTNT4»",
+            "ota": null,
+            "w": 348,
+            "h": 47,
+            "file": "tools/travista-p3-23.png",
+            "bytes": 3614
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «BCTRIP6»",
+            "ota": null,
+            "w": 324,
+            "h": 47,
+            "file": "tools/travista-p3-24.png",
+            "bytes": 2395
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «BCTRIP3»",
+            "ota": null,
+            "w": 324,
+            "h": 47,
+            "file": "tools/travista-p3-25.png",
+            "bytes": 2368
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «BCACTIVITY3»",
+            "ota": null,
+            "w": 324,
+            "h": 47,
+            "file": "tools/travista-p3-26.png",
+            "bytes": 2785
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MATRIP8»",
+            "ota": null,
+            "w": 290,
+            "h": 47,
+            "file": "tools/travista-p3-27.png",
+            "bytes": 2287
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MATRIP3»",
+            "ota": null,
+            "w": 290,
+            "h": 47,
+            "file": "tools/travista-p3-28.png",
+            "bytes": 2271
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «MATRIP5»",
+            "ota": null,
+            "w": 290,
+            "h": 47,
+            "file": "tools/travista-p3-29.png",
+            "bytes": 2200
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «일본으로 떠나세일»",
+            "ota": null,
+            "w": 349,
+            "h": 47,
+            "file": "tools/travista-p3-30.png",
+            "bytes": 3001
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «중국으로 떠나세일»",
+            "ota": null,
+            "w": 227,
+            "h": 47,
+            "file": "tools/travista-p3-31.png",
+            "bytes": 3245
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «베트남으로 떠나세일»",
+            "ota": null,
+            "w": 404,
+            "h": 47,
+            "file": "tools/travista-p3-32.png",
+            "bytes": 3236
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «태국으로 떠나세일»",
+            "ota": null,
+            "w": 336,
+            "h": 47,
+            "file": "tools/travista-p3-33.png",
+            "bytes": 3084
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «휴양지로 떠나세일»",
+            "ota": null,
+            "w": 349,
+            "h": 47,
+            "file": "tools/travista-p3-34.png",
+            "bytes": 3469
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «확인하기»",
+            "ota": null,
+            "w": 182,
+            "h": 47,
+            "file": "tools/travista-p3-35.png",
+            "bytes": 2306
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «마감 할인 프로모션»",
+            "ota": null,
+            "w": 191,
+            "h": 47,
+            "file": "tools/travista-p3-36.png",
+            "bytes": 3032
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «이번 주 호텔 특가»",
+            "ota": null,
+            "w": 336,
+            "h": 47,
+            "file": "tools/travista-p3-37.png",
+            "bytes": 3075
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «시크릿 혜택 프로모션»",
+            "ota": null,
+            "w": 310,
+            "h": 47,
+            "file": "tools/travista-p3-38.png",
+            "bytes": 3422
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «NWTRIP7»",
+            "ota": null,
+            "w": 277,
+            "h": 47,
+            "file": "tools/travista-p3-39.png",
+            "bytes": 2142
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "travista",
+        "name": "트래비스타 (ko, местный, 여행딜)",
+        "url": "https://travista.co.kr/klook-deals-promo-code/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": "Klook",
+            "w": 580,
+            "h": 344,
+            "file": "tools/travista-p4-0.png",
+            "bytes": 101512
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «프로모션 URL»",
+            "ota": null,
+            "w": 650,
+            "h": 91,
+            "file": "tools/travista-p4-1.png",
+            "bytes": 20812
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «클룩 프로모션 URL»",
+            "ota": null,
+            "w": 648,
+            "h": 184,
+            "file": "tools/travista-p4-2.png",
+            "bytes": 24342
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «쿠폰 적용 불가 목록»",
+            "ota": "Klook",
+            "w": 648,
+            "h": 153,
+            "file": "tools/travista-p4-3.png",
+            "bytes": 17242
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "trippromocode",
+    "name": "TripPromoCode (ko, местный, 쿠폰)",
+    "home": "https://trip-promocode.com/",
+    "pages": [
+      {
+        "slug": "trippromocode",
+        "name": "TripPromoCode (ko, местный, 쿠폰)",
+        "url": "https://trip-promocode.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "trippromocode",
+        "name": "TripPromoCode (ko, местный, 쿠폰)",
+        "url": "https://trip-promocode.com/%ec%95%84%ea%b3%a0%eb%8b%a4-%ed%95%a0%ec%9d%b8%ec%bd%94%eb%93%9c/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "coupon",
+            "label": "Купон/промо «trip-promocode.com»",
+            "ota": null,
+            "w": 702,
+            "h": 99,
+            "file": "tools/trippromocode-p1-0.png",
+            "bytes": 23782
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 444,
+            "file": "tools/trippromocode-p1-1.png",
+            "bytes": 88431
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 474,
+            "file": "tools/trippromocode-p1-2.png",
+            "bytes": 97732
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «아고다 예약취소 안내»",
+            "ota": "Agoda",
+            "w": 702,
+            "h": 26,
+            "file": "tools/trippromocode-p1-3.png",
+            "bytes": 7252
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «아고다 고객센터»",
+            "ota": "Agoda",
+            "w": 702,
+            "h": 53,
+            "file": "tools/trippromocode-p1-4.png",
+            "bytes": 16913
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "trippromocode",
+        "name": "TripPromoCode (ko, местный, 쿠폰)",
+        "url": "https://trip-promocode.com/%ed%98%b8%ed%85%94%ec%8a%a4%eb%8b%b7%ec%bb%b4-%ed%95%a0%ec%9d%b8%ec%bf%a0%ed%8f%b0/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "coupon",
+            "label": "Купон/промо «trip-promocode.com»",
+            "ota": null,
+            "w": 702,
+            "h": 26,
+            "file": "tools/trippromocode-p2-0.png",
+            "bytes": 8344
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 518,
+            "file": "tools/trippromocode-p2-1.png",
+            "bytes": 152195
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 518,
+            "file": "tools/trippromocode-p2-2.png",
+            "bytes": 140116
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «환불 정책 페이지»",
+            "ota": "Hotels.com",
+            "w": 702,
+            "h": 162,
+            "file": "tools/trippromocode-p2-3.png",
+            "bytes": 44538
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "trippromocode",
+        "name": "TripPromoCode (ko, местный, 쿠폰)",
+        "url": "https://trip-promocode.com/%ec%9d%b5%ec%8a%a4%ed%94%bc%eb%94%94%ec%95%84-%ed%95%a0%ec%9d%b8%ec%bd%94%eb%93%9c/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "coupon",
+            "label": "Купон/промо «trip-promocode.com»",
+            "ota": null,
+            "w": 702,
+            "h": 208,
+            "file": "tools/trippromocode-p3-0.png",
+            "bytes": 102265
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 518,
+            "file": "tools/trippromocode-p3-1.png",
+            "bytes": 147583
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 491,
+            "file": "tools/trippromocode-p3-2.png",
+            "bytes": 149950
+          },
+          {
+            "kind": "link",
+            "label": "OTA-ссылка «고객센터 페이지»",
+            "ota": "Expedia",
+            "w": 702,
+            "h": 79,
+            "file": "tools/trippromocode-p3-3.png",
+            "bytes": 29046
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "trippromocode",
+        "name": "TripPromoCode (ko, местный, 쿠폰)",
+        "url": "https://trip-promocode.com/%ed%8a%b8%eb%a6%bd%eb%8b%b7%ec%bb%b4-%ed%95%a0%ec%9d%b8%ec%bd%94%eb%93%9c/",
+        "page_type": "coupon",
+        "tools": [
+          {
+            "kind": "coupon",
+            "label": "Купон/промо «trip-promocode.com»",
+            "ota": null,
+            "w": 702,
+            "h": 106,
+            "file": "tools/trippromocode-p4-0.png",
+            "bytes": 31429
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 518,
+            "file": "tools/trippromocode-p4-1.png",
+            "bytes": 131210
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 702,
+            "h": 543,
+            "file": "tools/trippromocode-p4-2.png",
+            "bytes": 136383
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "wannazone",
+    "name": "WannaZone (ko, местный, 쿠폰)",
+    "home": "https://wannazone.co.kr/",
+    "pages": [
+      {
+        "slug": "wannazone",
+        "name": "WannaZone (ko, местный, 쿠폰)",
+        "url": "https://wannazone.co.kr/",
+        "page_type": "home",
+        "tools": [
+          {
+            "kind": "banner",
+            "label": "OTA/affiliate-баннер",
+            "ota": "Agoda",
+            "w": 209,
+            "h": 183,
+            "file": "tools/wannazone-p0-0.png",
+            "bytes": 12054
+          },
+          {
+            "kind": "banner",
+            "label": "OTA/affiliate-баннер",
+            "ota": null,
+            "w": 209,
+            "h": 183,
+            "file": "tools/wannazone-p0-1.png",
+            "bytes": 12084
+          },
+          {
+            "kind": "banner",
+            "label": "OTA/affiliate-баннер",
+            "ota": "Agoda",
+            "w": 209,
+            "h": 183,
+            "file": "tools/wannazone-p0-2.png",
+            "bytes": 10859
+          },
+          {
+            "kind": "banner",
+            "label": "OTA/affiliate-баннер",
+            "ota": null,
+            "w": 209,
+            "h": 165,
+            "file": "tools/wannazone-p0-3.png",
+            "bytes": 7440
+          },
+          {
+            "kind": "coupon",
+            "label": "Купон/промо «코드복사 70% 프로모션 알리익스프레스 슈퍼 벨류 특가 (»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-4.png",
+            "bytes": 11875
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → newtip.net «코드복사 65% 프로모션 익스피디아 인기 도»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-5.png",
+            "bytes": 11141
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 8% CODE WANNAZONE26»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-6.png",
+            "bytes": 11675
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 75% 프로모션 대만 타이페이 최대»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-7.png",
+            "bytes": 9996
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 25% 프로모션 6월 아고다 [해외»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-8.png",
+            "bytes": 11498
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → newtip.net «코드복사 NOL DRAW 프로모션 NOL 놀»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-9.png",
+            "bytes": 9020
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 5% CODE LP005 6월 호텔»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-10.png",
+            "bytes": 10456
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 5% CODE TOSSH05 [20»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-11.png",
+            "bytes": 9247
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lpweb.kr «코드복사 20% 프로모션 6월 깜짝할인 수요»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-12.png",
+            "bytes": 12165
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → linkmoa.kr «코드복사 80% 프로모션 클룩 X 태국 여행»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-13.png",
+            "bytes": 10629
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → linkmoa.kr «코드복사 3천원 CODE 클룩할인3천원 클룩»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-14.png",
+            "bytes": 9896
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 6000원 CODE 24KKNEW6»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-15.png",
+            "bytes": 10463
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lpweb.kr «코드복사 7,000원 CODE LINKPR2»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-16.png",
+            "bytes": 9245
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 1만원 프로모션 KKday 쿠폰받고»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-17.png",
+            "bytes": 8319
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → linkmoa.kr «코드복사 20% CODE 2025UPIK_$»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-18.png",
+            "bytes": 11577
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lpweb.kr «코드복사 30,000원 CODE LINKPR»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-19.png",
+            "bytes": 11135
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → linkmoa.kr «코드복사 12% 프로모션 APPKRTOTH »",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-20.png",
+            "bytes": 10534
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 7천원 CODE 클룩할인7천원 클룩»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-21.png",
+            "bytes": 10056
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 5% CODE BETTERONAPP»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-22.png",
+            "bytes": 9979
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 10,000원 CODE LINKPR»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-23.png",
+            "bytes": 10381
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → newtip.net «코드복사 20% 프로모션 아이허브 브랜드 고»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-24.png",
+            "bytes": 9721
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → s.click.aliexpress.com «코드복사 할인쿠폰 프로모션 알리익스프레스 할»",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-25.png",
+            "bytes": 10511
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lase.kr «코드복사 90% 프로모션 아이허브 특가상품 »",
+            "ota": null,
+            "w": 223,
+            "h": 197,
+            "file": "tools/wannazone-p0-26.png",
+            "bytes": 8413
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → bestmore.net «코드복사 5% 프로모션 아이허브(iHerb)»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-27.png",
+            "bytes": 9321
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → lpweb.kr «코드복사 25% 프로모션 아이허브 미니프로바»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-28.png",
+            "bytes": 8415
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → s.click.aliexpress.com «코드복사 50% 프로모션 [꽁돈대첩] 매일 »",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-29.png",
+            "bytes": 10317
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → s.click.aliexpress.com «코드복사 50% 프로모션 [7일 배송] 핫템»",
+            "ota": null,
+            "w": 223,
+            "h": 179,
+            "file": "tools/wannazone-p0-30.png",
+            "bytes": 10554
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "wannazone",
+        "name": "WannaZone (ko, местный, 쿠폰)",
+        "url": "https://wannazone.co.kr/hotelcode",
+        "page_type": "hotel_roundup",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "wannazone",
+        "name": "WannaZone (ko, местный, 쿠폰)",
+        "url": "https://wannazone.co.kr/tripcode",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "wannazone",
+        "name": "WannaZone (ko, местный, 쿠폰)",
+        "url": "https://wannazone.co.kr/grobalcode",
+        "page_type": "section",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      },
+      {
+        "slug": "wannazone",
+        "name": "WannaZone (ko, местный, 쿠폰)",
+        "url": "https://wannazone.co.kr/shoppingcode/%EC%BF%A0%ED%8C%A1/",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 800,
+            "h": 156,
+            "file": "tools/wannazone-p4-0.png",
+            "bytes": 32452
+          },
+          {
+            "kind": "card",
+            "label": "Инлайн-карточка",
+            "ota": null,
+            "w": 800,
+            "h": 156,
+            "file": "tools/wannazone-p4-1.png",
+            "bytes": 54085
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «프로모션 링크»",
+            "ota": null,
+            "w": 172,
+            "h": 34,
+            "file": "tools/wannazone-p4-2.png",
+            "bytes": 1532
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «코드복사 갤럭시 23, 23+, 23 울트라 액세서리 모음 기»",
+            "ota": null,
+            "w": 800,
+            "h": 50,
+            "file": "tools/wannazone-p4-3.png",
+            "bytes": 7525
+          },
+          {
+            "kind": "cta",
+            "label": "CTA «코드복사 쿠팡 Only 패션 최대 80% SALE 할인이벤트 »",
+            "ota": null,
+            "w": 800,
+            "h": 50,
+            "file": "tools/wannazone-p4-4.png",
+            "bytes": 8341
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → coupa.ng",
+            "ota": null,
+            "w": 800,
+            "h": 156,
+            "file": "tools/wannazone-p4-5.png",
+            "bytes": 48729
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → coupa.ng",
+            "ota": null,
+            "w": 800,
+            "h": 156,
+            "file": "tools/wannazone-p4-6.png",
+            "bytes": 50193
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → coupa.ng «코드복사 쿠팡에서 추천하는 게이밍 PC 구매»",
+            "ota": null,
+            "w": 800,
+            "h": 208,
+            "file": "tools/wannazone-p4-7.png",
+            "bytes": 28203
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "clickn",
+    "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+    "home": "https://clickn.co.kr/",
+    "pages": [
+      {
+        "slug": "clickn",
+        "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+        "url": "https://clickn.co.kr/",
+        "page_type": "home",
+        "tools": [
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → www.gabiacns.com «KICC 온라인 결제 이제 매장까지 커넥트 »",
+            "ota": null,
+            "w": 1366,
+            "h": 560,
+            "file": "tools/clickn-p0-0.png",
+            "bytes": 228916
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → modoo.biz «온라인 거래명세서 플랫폼 모두의거래 판매관리»",
+            "ota": null,
+            "w": 1366,
+            "h": 560,
+            "file": "tools/clickn-p0-1.png",
+            "bytes": 26684
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → draph.art",
+            "ota": null,
+            "w": 168,
+            "h": 218,
+            "file": "tools/clickn-p0-2.png",
+            "bytes": 2953
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "clickn",
+        "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+        "url": "https://www.clickn.co.kr/customer/qna",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → draph.art",
+            "ota": null,
+            "w": 168,
+            "h": 218,
+            "file": "tools/clickn-p1-0.png",
+            "bytes": 26566
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "clickn",
+        "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+        "url": "https://www.clickn.co.kr/template",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → draph.art",
+            "ota": null,
+            "w": 168,
+            "h": 218,
+            "file": "tools/clickn-p2-0.png",
+            "bytes": 36195
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "clickn",
+        "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+        "url": "https://www.clickn.co.kr/intro/homepage",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → draph.art",
+            "ota": null,
+            "w": 168,
+            "h": 218,
+            "file": "tools/clickn-p3-0.png",
+            "bytes": 14251
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      },
+      {
+        "slug": "clickn",
+        "name": "클릭앤 clickn (ko, местный, 클룩딜)",
+        "url": "https://www.clickn.co.kr/additional",
+        "page_type": "section",
+        "tools": [
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «글로벌 외국어 사이트 무료»",
+            "ota": null,
+            "w": 575,
+            "h": 140,
+            "file": "tools/clickn-p4-0.png",
+            "bytes": 8822
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «고객지원 예약 관리 무료»",
+            "ota": null,
+            "w": 575,
+            "h": 140,
+            "file": "tools/clickn-p4-1.png",
+            "bytes": 7366
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site",
+            "ota": null,
+            "w": 620,
+            "h": 620,
+            "file": "tools/clickn-p4-2.png",
+            "bytes": 273634
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site",
+            "ota": null,
+            "w": 620,
+            "h": 620,
+            "file": "tools/clickn-p4-3.png",
+            "bytes": 273634
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «글로벌 외국어 사이트 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-4.png",
+            "bytes": 8537
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «고객지원 예약관리 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-5.png",
+            "bytes": 7668
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «쇼핑 토스페이 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-6.png",
+            "bytes": 30259
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 구글 로그인 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-7.png",
+            "bytes": 7072
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 구글 지도 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-8.png",
+            "bytes": 7091
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 카카오 지도 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-9.png",
+            "bytes": 7224
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 페이스북 로그인 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-10.png",
+            "bytes": 7966
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 네이버 지도 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-11.png",
+            "bytes": 6902
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 카카오 로그인 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-12.png",
+            "bytes": 7024
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 인스타그램 피드 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-13.png",
+            "bytes": 12329
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 카카오 알림톡 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-14.png",
+            "bytes": 11069
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «쇼핑 전자결제(PG) 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-15.png",
+            "bytes": 8923
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 SMS 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-16.png",
+            "bytes": 7026
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 메일 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-17.png",
+            "bytes": 5931
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림 네이버 로그인 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-18.png",
+            "bytes": 6691
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «시스템 도메인 연결 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-19.png",
+            "bytes": 7468
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «고객지원 휴대폰 본인인증 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-20.png",
+            "bytes": 7623
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «쇼핑 네이버쇼핑 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-21.png",
+            "bytes": 6512
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «SNS/알림​ 애플 로그인 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-22.png",
+            "bytes": 8142
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «쇼핑 네이버페이 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-23.png",
+            "bytes": 6541
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «시스템 사이트 복제 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-24.png",
+            "bytes": 6315
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «시스템 소유권 이전 유료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-25.png",
+            "bytes": 7007
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → www.gabiacns.com «마케팅 온라인 광고 맞춤 컨설팅 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-26.png",
+            "bytes": 8247
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → clickn.notion.site «고객지원​ 네이버 톡톡 무료»",
+            "ota": null,
+            "w": 390,
+            "h": 188,
+            "file": "tools/clickn-p4-27.png",
+            "bytes": 7567
+          },
+          {
+            "kind": "unknown",
+            "label": "Внешняя ссылка (?) → draph.art",
+            "ota": null,
+            "w": 168,
+            "h": 218,
+            "file": "tools/clickn-p4-28.png",
+            "bytes": 26557
+          }
+        ],
+        "integrations": [],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "slug": "aros100",
+    "name": "아백 (ko, местный, 수익화/여행)",
+    "home": "https://aros100.com/",
+    "pages": [
+      {
+        "slug": "aros100",
+        "name": "아백 (ko, местный, 수익화/여행)",
+        "url": "https://aros100.com/",
+        "page_type": "home",
+        "tools": [],
+        "integrations": [],
+        "note": "no tool captured"
+      }
+    ]
+  }
+]
