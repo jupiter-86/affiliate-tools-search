@@ -59,13 +59,22 @@ For each blog, record the **language** and the type (local / English-for-foreign
 ⚠️ **Main anti-bias rule:** search FIRST and MOSTLY in the **local language**. `WebSearch` is heavily biased
 toward English results — searching in English yields all-expat / "guide for foreigners" blogs and an
 unrepresentative report (this happened for Japan/Korea). To get a Taiwan-like healthy mix:
-1. **First, 4–6 queries in the local language** (ja/ko/th/zh-TW…) — build the bulk from these.
+0. **Figure out the country's language(s) yourself** (you know them): Japan→ja, Korea→ko, Thailand→th,
+   Taiwan→zh-TW, Iceland→is, Netherlands→nl, etc. In small/touristy countries some locals also write in
+   English — that's fine, see step 3.
+1. **First, 4–6 queries in the local language** — build the bulk from these.
 2. Only then 1–2 English queries — top up a little.
-3. **Target ratio: ~70–80% local-language blogs**, English ones a minority and only if the author is
-   genuinely local / lives in the country. If your shortlist is suddenly almost all English — that's a signal
-   you skewed: go back to step 1 and add locals.
-4. Look for local authors on the country's platforms: Japan — Ameba/Hatena/note/own domains; Korea — Naver
-   Blog/Tistory/Brunch; Taiwan — pixnet; Thailand — own domains/Blockdit; etc.
+3. **Goal = a representative mix that fits the country's reality, not a fixed number.** For big
+   local-language markets (Japan/Korea/Taiwan/Thailand) that's ~70–80% local. For small / "English-heavy"
+   countries (Iceland, Netherlands…) the English share is naturally higher — but still hunt for **genuinely
+   local authors** (live there, write for locals), not international/expat travel sites. Failure = a shortlist
+   made entirely of big English "guide for tourists" sites.
+4. **Discover the platform on the fly — NOT from a hardcoded list** (this is the universality: Iceland or any
+   country). Method: (a) search blogs in the local language; (b) if you don't know the local blog platforms —
+   **ask the results**: `WebSearch` "popular blogging platform in <country>", "<country> 旅行/여행/travel
+   bloggers", and see which **domains/platforms recur** — those are the local ones. Examples (illustration,
+   NOT a lookup table): Japan — Ameba/Hatena/note; Korea — Naver/Tistory/Brunch; Taiwan — pixnet; Thailand —
+   Blockdit. Iceland/Europe — more often own domains + social.
 
 Gather ~12–20 candidates; for each — a **home URL** and (ideally) one **tool-rich seed article** (hotel
 roundup / itinerary). **Local-language** query templates (substitute the country):
