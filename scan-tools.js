@@ -431,16 +431,17 @@ async function discoverPages(context, t) {
     ownBrowser = false;
     process.stderr.write('CDP mode: attached to ' + CDP + '\n');
   } else {
-    // HEADLESS=1 -> run without a visible window (no browser popping in your face).
-    // Default is headed: it beats more anti-bot/403. Headless still works for most sites.
-    const HEADLESS = process.env.HEADLESS === '1' || process.env.HEADLESS === 'true';
-    browser = await chromium.launch({ headless: HEADLESS, channel: 'chrome', args: ['--disable-blink-features=AutomationControlled'] });
+    // DEFAULT = headless (no browser window popping in your face / covering your windows).
+    // Set HEADED=1 to show the window (helps beat anti-bot/403 on aggressive sites).
+    // (HEADLESS=0 also forces headed, for convenience.)
+    const headed = process.env.HEADED === '1' || process.env.HEADED === 'true' || process.env.HEADLESS === '0';
+    browser = await chromium.launch({ headless: !headed, channel: 'chrome', args: ['--disable-blink-features=AutomationControlled'] });
     context = await browser.newContext({
       locale: LOCALE,
       viewport: { width: 1366, height: 950 },
       userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
     });
-    process.stderr.write('launch mode: ' + (HEADLESS ? 'headless' : 'headed') + '\n');
+    process.stderr.write('launch mode: ' + (headed ? 'headed' : 'headless (default — no window)') + '\n');
   }
   // dedicated page used only to downscale screenshots into the HTML (cross-platform, no sips/sharp)
   const thumbPage = await context.newPage();

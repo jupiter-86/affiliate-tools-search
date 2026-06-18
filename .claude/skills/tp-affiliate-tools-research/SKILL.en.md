@@ -110,8 +110,8 @@ an unknown affiliate network). So BEFORE scanning:
 ```bash
 node scan-tools.js targets-<country>.json <country> <locale>
 # locale: zh-TW / ja-JP / ko-KR / th-TH / en-US ...
-# headless (no visible browser window; when the user asks for "in the background"):
-HEADLESS=1 node scan-tools.js targets-<country>.json <country> <locale>
+# show the browser window (default is headless — no window pops up):
+HEADED=1 node scan-tools.js targets-<country>.json <country> <locale>
 # + catch UNKNOWN affiliates (external links with params / repeated commerce hosts):
 INCLUDE_UNKNOWN=1 node scan-tools.js targets-<country>.json <country> <locale>
 ```
@@ -119,9 +119,9 @@ INCLUDE_UNKNOWN=1 node scan-tools.js targets-<country>.json <country> <locale>
 "noisy" wide net: then **YOU validate them by eye** (Step 5) and either confirm (better — add the host to
 `OTA_MAP` and re-scan so it gets a precise type) or discard. Turn it on when you need recall / an unfamiliar
 market (Iceland, etc.).
-Default is headed (channel:'chrome'): beats more anti-bot. If the user asks to keep the browser from
-popping up / run in the background — set `HEADLESS=1`. Headless downside: slightly more 403/captcha on
-aggressive sites (flag honestly); the Emerald class still won't render under automation anyway.
+**Default is headless** (no window pops up / covers the user's work). If a site throws lots of 403/captcha —
+try `HEADED=1` (a visible window beats more anti-bot), but warn the user a window will appear. The Emerald
+class still won't render under automation anyway (needs CDP, see below).
 Per blog the scanner auto-discovers up to 5 different pages (home + sections/articles by navigation
 clusters), loads them, **scrolls to the true bottom** (important: articles can be 100k+ px), detects tools,
 screenshots the elements, and **after each blog rewrites** `<country>-manifest.json` and

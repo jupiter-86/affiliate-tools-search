@@ -26,8 +26,8 @@ always HTML) that is built **step-by-step** — blog by blog.
    captures validated tool screenshots, and assembles the HTML. You get a `<country>-blogs.html`
    file that grows as the analysis proceeds (you can open and refresh it while it runs).
 
-   To keep the browser from **popping up** while it works — add "in headless/background mode" to your
-   request, or run the scanner with `HEADLESS=1` (see below). Default is headed (beats more anti-bot).
+   **By default the browser does NOT pop up** (headless) — no windows covering your work.
+   If you need to show the window (sometimes beats more anti-bot) — run with `HEADED=1` (see below).
 
 ## What you get
 - `<country>-blogs.html` — the main report: a table **# · Blog · Description · Tools ·
@@ -39,9 +39,10 @@ always HTML) that is built **step-by-step** — blog by blog.
 ```bash
 # 1) the agent prepares targets-<country>.json: [{ "slug","name","home","seed" }, ...]
 # 2) scan + step-by-step HTML build (locale: zh-TW / ja-JP / ko-KR / en-US / ...):
+#    headless by default — NO browser window appears:
 node scan-tools.js targets-japan.json japan ja-JP
-# in the background, without a visible browser window:
-HEADLESS=1 node scan-tools.js targets-japan.json japan ja-JP
+# show the window (if a site blocks headless — better chance against anti-bot):
+HEADED=1 node scan-tools.js targets-japan.json japan ja-JP
 # rebuild the HTML from the manifest separately:
 node gen-html.js japan-manifest.json japan-blogs.html "Japan travel blogs — affiliate tools"
 ```
