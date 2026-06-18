@@ -10,3 +10,4 @@ targets-*.json
 .DS_Store
 blogs-*.md
 *-blogs
+.scanpid

@@ -34,9 +34,15 @@ const OTA_MAP = [
   ['eztravel', 'ezTravel'], ['liontravel', 'LionTravel'], ['hotelscombined', 'HotelsCombined'],
   ['qeeq', 'QEEQ'], ['rentalcover', 'RentalCover'], ['easyrentcars', 'EasyRentCars'], ['funtime', 'FunTime'],
   ['hoteljp', 'HotelJP'], ['jalan', 'Jalan'], ['rakuten', 'Rakuten'], ['agora', 'Agora'],
+  // Japan domestic OTAs
+  ['ikyu', 'Ikyu'], ['jtb', 'JTB'], ['rurubu', 'Rurubu'], ['yukoyuko', 'Yukoyuko'], ['relux', 'Relux'],
+  ['ozmall', 'OZmall'], ['ouchi-de', 'Ouchi'], ['travel.yahoo', 'YahooTravel'], ['rakutentravel', 'Rakuten'],
 ];
 const SHORT = ['tpk.lu', 'tp.st', 'tp-em.cc', 'emrld.cc', 'pse.is', 'reurl.cc', 'i-tm.com.tw', 'stay22.com',
-  'lihi.cc', 'lihi1.com', 'lihi2.com', 'lihi3.com', 'lihi.tv', 'pics.ee', 'risu.io', 'myship.7-11', 'travelpayouts'];
+  'lihi.cc', 'lihi1.com', 'lihi2.com', 'lihi3.com', 'lihi.tv', 'pics.ee', 'risu.io', 'myship.7-11', 'travelpayouts',
+  // Japan affiliate networks (redirect/tracking hosts): A8.net, moshimo, ValueCommerce, accesstrade, afb, felmat, rentracks
+  'a8.net', 'af.moshimo.com', 'moshimo.com', 'valuecommerce.com', 'dalr8.net', 'accesstrade.net', 'h.accesstrade',
+  'afi-b.com', 'afb.jp', 'felmat.net', 'rentracks', 'tg-affiliate', 'afl.rakuten.co.jp', 'ck.jp.ap'];
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -98,7 +104,7 @@ async function scan(context, t) {
       const hostOf = (s) => { try { return new URL(s, location.href).hostname.toLowerCase(); } catch (e) { return ''; } };
       const otaName = (s) => { const h = hostOf(s); for (const [f, n] of OTA_MAP) if (h.includes(f)) return n; return null; };
       const isShort = (s) => { const h = hostOf(s); return SHORT.some(x => h.includes(x)); };
-      const monParams = (s) => /[?&](aid|cid|marker|shmarker|partner|partner_id|pid|mcid|trs|sub_id|campaign|tag|site_id|aff|adid|wid|irclickid|clickref)/i.test(s || '');
+      const monParams = (s) => /[?&](aid|cid|marker|shmarker|partner|partner_id|pid|mcid|trs|sub_id|campaign|tag|site_id|aff|adid|wid|irclickid|clickref|a8mat|a_id|vc_url|vcptn|f_id|m_id)/i.test(s || '');
       const CLOAK = /\/(go|out|recommend|recommends|aff|affiliate|link|links|deal|deals|ref|visit|r)\//i;
       const isCloak = (s) => { try { const u = new URL(s, location.href); return u.hostname === location.hostname && CLOAK.test(u.pathname); } catch (e) { return false; } };
       const isToolLink = (h) => !!otaName(h) || isShort(h) || isCloak(h) || (monParams(h) && hostOf(h) !== location.hostname);
@@ -434,8 +440,14 @@ async function discoverPages(context, t) {
     // DEFAULT = headless (no browser window popping in your face / covering your windows).
     // Set HEADED=1 to show the window (helps beat anti-bot/403 on aggressive sites).
     // (HEADLESS=0 also forces headed, for convenience.)
+    // IMPORTANT: headless uses Playwright's BUNDLED Chromium (NOT channel:'chrome') —
+    // real Chrome in headless on macOS crashes the renderer ("Target closed", exit 1).
+    // Bundled Chromium headless is stable. Headed uses real Chrome (better vs anti-bot).
     const headed = process.env.HEADED === '1' || process.env.HEADED === 'true' || process.env.HEADLESS === '0';
-    browser = await chromium.launch({ headless: !headed, channel: 'chrome', args: ['--disable-blink-features=AutomationControlled'] });
+    const launchOpts = { args: ['--disable-blink-features=AutomationControlled'] };
+    if (headed) { launchOpts.headless = false; launchOpts.channel = 'chrome'; }
+    else { launchOpts.headless = true; } // bundled Chromium
+    browser = await chromium.launch(launchOpts);
     context = await browser.newContext({
       locale: LOCALE,
       viewport: { width: 1366, height: 950 },

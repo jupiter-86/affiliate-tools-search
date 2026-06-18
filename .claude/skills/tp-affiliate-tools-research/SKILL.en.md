@@ -56,9 +56,19 @@ For each blog, record the **language** and the type (local / English-for-foreign
 
 ## 3. SOURCES — how to find a country's blogs (Step 1)
 
-⚠️ **Main anti-bias rule:** search FIRST and MOSTLY in the **local language**. `WebSearch` is heavily biased
-toward English results — searching in English yields all-expat / "guide for foreigners" blogs and an
-unrepresentative report (this happened for Japan/Korea). To get a Taiwan-like healthy mix:
+🛑 **STOP-GATE (follow literally — this skew has recurred three times):**
+- **Do NOT run any English `WebSearch` and do NOT build the `targets` file until you've run ≥4 queries in the
+  LOCAL language and gathered the MAJORITY of candidates from them.** WebSearch is US/English-biased — going
+  English-first guarantees expat / "guide for foreigners" results.
+- **Do NOT copy `targets-<other_country>.json` as a template.** Prior files may be skewed (e.g. Korea came out
+  all-English — that's a bug, not a model). The reference is the Taiwan slice in `examples/` (a healthy local
+  mix). Every country starts from scratch with local-language search.
+- **Self-check BEFORE scanning:** count local vs English in your shortlist. For big local-language markets,
+  local should be **≥60–70%**. If lower — you skewed: go back to local queries and top up before running.
+- Reasons you usually drift to English (remember and resist): a precedent file in the repo; US-centric
+  WebSearch; the English affiliate stack is easier to detect. None justify an unrepresentative report.
+
+Procedure:
 0. **Figure out the country's language(s) yourself** (you know them): Japan→ja, Korea→ko, Thailand→th,
    Taiwan→zh-TW, Iceland→is, Netherlands→nl, etc. In small/touristy countries some locals also write in
    English — that's fine, see step 3.
@@ -86,6 +96,18 @@ roundup / itinerary). **Local-language** query templates (substitute the country
 - hooks: hotel reviews, itineraries (行程/일정/itinerary), "things to do", roundups, Klook-vs-KKday comparisons,
   coupon pages (折扣碼/쿠폰/优惠/coupon). Platforms above.
 Don't invent domains — verify they open. For each candidate record its language and local/foreign type.
+
+**The local monetization stack ≠ the Western one (Booking/Stay22/Klook).** Local blogs monetize via THEIR
+networks/OTAs — find and detect those (extend `OTA_MAP`/`SHORT`, Step 3a). Cheat-sheet (NOT exhaustive):
+- 🇯🇵 **Japan**: networks A8.net, ValueCommerce (バリューコマース), moshimo (もしも), Rakuten Affiliate,
+  AccessTrade; OTAs Rakuten Travel (楽天トラベル), Jalan (じゃらん), Ikyu (一休), JTB, Rurubu; formats — A8
+  text/banner links, Rakuten product widgets. (some already in `OTA_MAP`/`SHORT`.)
+- 🇰🇷 **Korea**: networks Coupang Partners (쿠팡파트너스), LinkPrice (링크프라이스), AdPick (애드픽); OTAs
+  Yanolja (야놀자), GoodChoice (여기어때), Interpark Tour, Hana Tour, Trip.com; platforms Naver Blog/Tistory.
+- 🇹🇭 **Thailand**: networks Involve Asia, AccessTrade TH; OTAs Agoda/Traveloka; platform Blockdit.
+- 🇹🇼 **Taiwan** (reference): Klook/KKday/Agoda, Travelpayouts shortlinks, iChannels 通路王, pse.is/reurl.cc.
+- **Any other country** (Iceland, etc.): the local networks/OTAs are their own — discover them via recon
+  (Step 3a) and search the local blogosphere for THOSE, not Booking/Stay22.
 
 Build `targets-<country>.json`. **Put the language/type in `name`** (`ja, local` / `EN, for foreigners`) —
 it shows in the report and makes the sample balance obvious at a glance:
