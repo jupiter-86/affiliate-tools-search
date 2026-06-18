@@ -18,8 +18,8 @@ Everything needed sits next to this file: `scan-tools.js`, `gen-html.js`, the ho
 
 ## 0. Environment setup (once)
 - Needs **Playwright**. If missing: `npm run setup` (or `npm install && npx playwright install chromium`).
-- Browser: default `chromium.launch({ headless:false, channel:'chrome' })` (beats part of anti-bot).
-  If no system Chrome — the Playwright-Chromium from `npx playwright install chromium`.
+- Browser: **default HEADLESS on bundled Chromium** (no window pops up; stable on macOS; important when
+  several scans run in parallel). System Chrome (headed) only via `HEADED=1`.
 - (Optional) **Playwright MCP** for interactive browser driving:
   `claude mcp add playwright npx '@playwright/mcp@latest'` (or the bundled `.mcp.json` auto-offers it).
   But the main path is `scan-tools.js` (custom logic: element-level screenshots, Shadow DOM,
@@ -167,8 +167,10 @@ INCLUDE_UNKNOWN=1 node scan-tools.js targets-<country>.json <country> <locale>
 "noisy" wide net: then **YOU validate them by eye** (Step 5) and either confirm (better — add the host to
 `OTA_MAP` and re-scan so it gets a precise type) or discard. Turn it on when you need recall / an unfamiliar
 market (Iceland, etc.).
-**Default is headless** (no window pops up / covers the user's work). If a site throws lots of 403/captcha —
-try `HEADED=1` (a visible window beats more anti-bot), but warn the user a window will appear. The Emerald
+**Default is headless** (no window pops up). 🚫 **Do NOT auto-switch to `HEADED`** (not even on 403/captcha):
+headed opens a browser window and **breaks multi-agent / parallel runs** (the user often runs several
+countries at once — windows must not pop up). On 403/block, just mark the page "couldn't verify" and move on.
+`HEADED=1` is **only when the user explicitly asks** to see the window. The Emerald
 class still won't render under automation anyway (needs CDP, see below).
 Per blog the scanner auto-discovers up to 5 different pages (home + sections/articles by navigation
 clusters), loads them, **scrolls to the true bottom** (important: articles can be 100k+ px), detects tools,

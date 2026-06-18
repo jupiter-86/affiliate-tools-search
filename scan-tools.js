@@ -43,6 +43,7 @@ const OTA_MAP = [
   // Korea domestic OTAs
   ['yanolja', 'Yanolja'], ['goodchoice', 'GoodChoice'], ['myrealtrip', 'MyRealTrip'], ['hanatour', 'HanaTour'],
   ['interpark', 'Interpark'], ['triple.guide', 'Triple'],
+  ['myrealt.rip', 'MyRealTrip'], ['coupa.ng', 'Coupang'],
 ];
 const SHORT = ['tpk.lu', 'tp.st', 'tp-em.cc', 'emrld.cc', 'pse.is', 'reurl.cc', 'i-tm.com.tw', 'stay22.com',
   'lihi.cc', 'lihi1.com', 'lihi2.com', 'lihi3.com', 'lihi.tv', 'pics.ee', 'risu.io', 'myship.7-11', 'travelpayouts',
@@ -54,7 +55,9 @@ const SHORT = ['tpk.lu', 'tp.st', 'tp-em.cc', 'emrld.cc', 'pse.is', 'reurl.cc', 
   'app.ac', 'invol.co', 'involve.asia', 'anrdoezrs.net', 'dpbolvw.net', 'jdoqocy.com', 'kqzyfj.com',
   'tkqlhce.com', 'awin1.com', 'go.redirectingat', 'shareasale',
   // Korea networks: Coupang Partners (link.coupang.com + lptag param), LinkPrice, tenping
-  'link.coupang.com', 'linkprice.com', 'tenping.kr'];
+  'link.coupang.com', 'linkprice.com', 'tenping.kr',
+  // Korea CPS coupon/deeplink redirectors (confirmed on coupon blogs: wannazone/benefitshub etc.)
+  'myrealt.rip', 'coupa.ng', 'lase.kr', 'lpweb.kr', 'linkmoa.kr', 'bestmore.net', 'newtip.net', 's.click.aliexpress.com'];
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
