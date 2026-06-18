@@ -38,25 +38,52 @@ Types (NOT exhaustive — don't dismiss the unfamiliar if it leads to booking):
 - **invisible JS integrations** (loaded by a script, rendered into Shadow DOM): Stay22 `lma`/`letmeallez`,
   **Travelpayouts Emerald** (`emrld.cc`, `<emerald-block>`), Klook/GYG widget JS.
 
-## 2. WHAT counts as a travel blog (site validation)
-Count sites that **recommend** where to go, where to stay, what to try (guides, itineraries, hotel/activity
-reviews). NOT of interest (or "weak candidate"): purely informational sites without recommendations/
-monetization, OTAs/aggregators themselves, news portals. Borderline — flag it, don't silently drop it.
+## 2. WHAT counts as a "blog OF country X" (KEY definition)
+"A travel blog of Japan / Korea / Thailand…" = a **local blog**: the author is **from that country and
+lives there**, writes **in the country's language** (ja/ko/th/zh-TW…) **for the local audience**
+(fellow locals planning trips). NOT an "English-language guide about the country for Western tourists".
+
+- ✅ Count: local author, local language, content for the country's residents (where to go, where to stay,
+  what to try) — guides, itineraries, hotel/activity reviews, with monetization.
+- ⚠️ **English-language expat / digital-nomad / "travel guide for foreigners" blogs are NOT a "blog of the
+  country"** — they're blogs *about* the country for visitors. Include them only as a **minority** (see the
+  ratio in Step 3), and only if the author is genuinely local / lives there. Don't make the whole report out
+  of them — that's unrepresentative.
+- ❌ Not of interest: purely informational sites without recommendations/monetization, OTAs/aggregators, news.
+- Borderline — flag it (language, who the author is, who it targets), don't silently drop it.
+
+For each blog, record the **language** and the type (local / English-for-foreigners) — it goes into the report.
 
 ## 3. SOURCES — how to find a country's blogs (Step 1)
-Via `WebSearch`, in the local language AND in English. Gather ~12–20 candidates; for each — a **home URL**
-and (ideally) one **tool-rich seed article** (hotel roundup / itinerary).
-Query templates (substitute country/language):
-- "<country> travel blog", "best <country> travel bloggers", "<country> hotel guide Agoda Klook".
-- local: e.g. Taiwan "台灣 旅遊 部落格 推薦", Japan "日本 旅行 ブログ ホテル",
-  Korea "한국 여행 블로그 호텔", Thailand "เที่ยว <...> บล็อก".
-- hooks: hotel reviews, itineraries (行程/itinerary), "things to do", roundups, Klook-vs-KKday comparisons,
-  coupon pages (折扣碼/优惠/coupon). Platforms: own domains, pixnet, blogspot, wordpress.
-Don't invent domains — verify they open.
 
-Build `targets-<country>.json`:
+⚠️ **Main anti-bias rule:** search FIRST and MOSTLY in the **local language**. `WebSearch` is heavily biased
+toward English results — searching in English yields all-expat / "guide for foreigners" blogs and an
+unrepresentative report (this happened for Japan/Korea). To get a Taiwan-like healthy mix:
+1. **First, 4–6 queries in the local language** (ja/ko/th/zh-TW…) — build the bulk from these.
+2. Only then 1–2 English queries — top up a little.
+3. **Target ratio: ~70–80% local-language blogs**, English ones a minority and only if the author is
+   genuinely local / lives in the country. If your shortlist is suddenly almost all English — that's a signal
+   you skewed: go back to step 1 and add locals.
+4. Look for local authors on the country's platforms: Japan — Ameba/Hatena/note/own domains; Korea — Naver
+   Blog/Tistory/Brunch; Taiwan — pixnet; Thailand — own domains/Blockdit; etc.
+
+Gather ~12–20 candidates; for each — a **home URL** and (ideally) one **tool-rich seed article** (hotel
+roundup / itinerary). **Local-language** query templates (substitute the country):
+- Japan: "日本 旅行 ブログ ホテル 予約", "<city> 観光 ブログ おすすめ", "日本人 旅行ブロガー 人気".
+- Korea: "국내여행 블로그 추천 호텔 예약", "<city> 여행 블로그 후기", "여행 블로거 추천".
+- Thailand: "รีวิว ที่พัก บล็อก เที่ยว <province>", "บล็อกเกอร์ ท่องเที่ยว ไทย".
+- Taiwan (the reference): "台灣 旅遊 部落格 推薦", "<city> 自由行 部落客", "飯店 訂房 部落格".
+- English (top-up, minority): "best local <country> travel bloggers", "<country> travel blog (in <language>)".
+- hooks: hotel reviews, itineraries (行程/일정/itinerary), "things to do", roundups, Klook-vs-KKday comparisons,
+  coupon pages (折扣碼/쿠폰/优惠/coupon). Platforms above.
+Don't invent domains — verify they open. For each candidate record its language and local/foreign type.
+
+Build `targets-<country>.json`. **Put the language/type in `name`** (`ja, local` / `EN, for foreigners`) —
+it shows in the report and makes the sample balance obvious at a glance:
 ```json
-[ { "slug": "nickkembel", "name": "Nick Kembel Travels",
+[ { "slug": "mimmin", "name": "ミンミンの旅行記 (ja, local)",
+    "home": "https://example.jp/", "seed": "https://example.jp/tokyo-hotels/" },
+  { "slug": "nickkembel", "name": "Nick Kembel Travels (EN, for foreigners)",
     "home": "https://www.nickkembel.com/", "seed": "https://www.nickkembel.com/taiwan-itinerary-1-2-3-weeks/" } ]
 ```
 
@@ -121,7 +148,8 @@ positives, tweak the filters in `scan-tools.js`.
 - Didn't open / 403 / captcha — flag honestly, don't fabricate a verdict.
 - "A tool is present" = an observed fact from a screenshot/snapshot, not a guess.
 - An unfamiliar tool format that leads to booking — capture and describe it (don't dismiss).
-- At the end give a summary: how many blogs, how many tools, which types dominate, the path to `<country>-blogs.html`.
+- At the end give a summary: how many blogs, how many tools, which types dominate, the **language balance
+  (local vs English)**, the path to `<country>-blogs.html`. If it skewed English, say so.
 - How the Taiwan/Asia market differs: heavy on Klook/KKday/Agoda, Travelpayouts shortlinks
   (`tpk.lu/tp.st/tp-em.cc/emrld.cc`), coupon/promo pages, local shorteners (`pse.is/reurl.cc`), the local
   affiliate network iChannels 通路王 (`i-tm.com.tw`) — vs the Western Booking/Expedia/Amazon.
