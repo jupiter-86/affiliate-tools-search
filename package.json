@@ -1,0 +1,14 @@
+{
+  "name": "affiliate-tools-research",
+  "version": "1.0.0",
+  "description": "Local Claude agent that finds affiliate monetization tools on travel blogs (any country) and outputs an HTML report with element-level screenshots.",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && npx playwright install chromium",
+    "scan": "node scan-tools.js",
+    "gen": "node gen-html.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

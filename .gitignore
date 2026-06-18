@@ -1,0 +1,9 @@
+node_modules/
+tools/
+videos/
+*-manifest.json
+*-blogs.html
+report.html
+targets-*.json
+*.log
+.DS_Store
