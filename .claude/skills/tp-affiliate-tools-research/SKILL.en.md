@@ -38,6 +38,10 @@ Types (NOT exhaustive — don't dismiss the unfamiliar if it leads to booking):
 - **invisible JS integrations** (loaded by a script, rendered into Shadow DOM): Stay22 `lma`/`letmeallez`,
   **Travelpayouts Emerald** (`emrld.cc`, `<emerald-block>`), Klook/GYG widget JS.
 
+❌ **NOT tools** (the scanner already filters these; if one slips through, drop it in validation):
+video/social embeds (**YouTube/Vimeo/Instagram/Facebook/TikTok**), ad slots (AdSense), social follow buttons,
+navigation/menus, related-posts. None of these lead to booking a travel service.
+
 ## 2. WHAT counts as a "blog OF country X" (KEY definition)
 "A travel blog of Japan / Korea / Thailand…" = a **local blog**: the author is **from that country and
 lives there**, writes **in the country's language** (ja/ko/th/zh-TW…) **for the local audience**
@@ -63,6 +67,9 @@ platforms that allow custom HTML/JS). That's where the tools we study live.
   widgets/scripts; otherwise prefer own domains.
 
 For each blog, record the **language** and the type (local / English-for-foreigners) — it goes into the report.
+**Classify by the DOMINANT language of the page's actual content**, not by domain/expectation. Some blogs are
+**multilingual / pan-regional** (one site serves zh/th/en) — don't force them into one country; tag them
+"multilingual" and account for it in conclusions (else you count a foreign blog as local — as happened with itravelblog).
 
 ## 3. SOURCES — how to find a country's blogs (Step 1)
 

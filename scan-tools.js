@@ -37,12 +37,24 @@ const OTA_MAP = [
   // Japan domestic OTAs
   ['ikyu', 'Ikyu'], ['jtb', 'JTB'], ['rurubu', 'Rurubu'], ['yukoyuko', 'Yukoyuko'], ['relux', 'Relux'],
   ['ozmall', 'OZmall'], ['ouchi-de', 'Ouchi'], ['travel.yahoo', 'YahooTravel'], ['rakutentravel', 'Rakuten'],
+  // multi-region OTAs / tour platforms (seed — broadly useful beyond one country)
+  ['traveloka', 'Traveloka'], ['rentcars', 'Rentcars'], ['civitatis', 'Civitatis'], ['123milhas', '123Milhas'],
+  ['segurospromo', 'SegurosPromo'], ['decolar', 'Decolar'], ['travelfish', 'Travelfish'],
+  // Korea domestic OTAs
+  ['yanolja', 'Yanolja'], ['goodchoice', 'GoodChoice'], ['myrealtrip', 'MyRealTrip'], ['hanatour', 'HanaTour'],
+  ['interpark', 'Interpark'], ['triple.guide', 'Triple'],
 ];
 const SHORT = ['tpk.lu', 'tp.st', 'tp-em.cc', 'emrld.cc', 'pse.is', 'reurl.cc', 'i-tm.com.tw', 'stay22.com',
   'lihi.cc', 'lihi1.com', 'lihi2.com', 'lihi3.com', 'lihi.tv', 'pics.ee', 'risu.io', 'myship.7-11', 'travelpayouts',
   // Japan affiliate networks (redirect/tracking hosts): A8.net, moshimo, ValueCommerce, accesstrade, afb, felmat, rentracks
   'a8.net', 'af.moshimo.com', 'moshimo.com', 'valuecommerce.com', 'dalr8.net', 'accesstrade.net', 'h.accesstrade',
-  'afi-b.com', 'afb.jp', 'felmat.net', 'rentracks', 'tg-affiliate', 'afl.rakuten.co.jp', 'ck.jp.ap'];
+  'afi-b.com', 'afb.jp', 'felmat.net', 'rentracks', 'tg-affiliate', 'afl.rakuten.co.jp', 'ck.jp.ap',
+  // GLOBAL affiliate networks / deeplinks (seed — used worldwide, benefit every country):
+  // app.ac=Agoda deeplink; Involve Asia (SEA); CJ/Commission Junction; Awin; Skimlinks; ShareASale
+  'app.ac', 'invol.co', 'involve.asia', 'anrdoezrs.net', 'dpbolvw.net', 'jdoqocy.com', 'kqzyfj.com',
+  'tkqlhce.com', 'awin1.com', 'go.redirectingat', 'shareasale',
+  // Korea networks: Coupang Partners (link.coupang.com + lptag param), LinkPrice, tenping
+  'link.coupang.com', 'linkprice.com', 'tenping.kr'];
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
@@ -104,7 +116,8 @@ async function scan(context, t) {
       const hostOf = (s) => { try { return new URL(s, location.href).hostname.toLowerCase(); } catch (e) { return ''; } };
       const otaName = (s) => { const h = hostOf(s); for (const [f, n] of OTA_MAP) if (h.includes(f)) return n; return null; };
       const isShort = (s) => { const h = hostOf(s); return SHORT.some(x => h.includes(x)); };
-      const monParams = (s) => /[?&](aid|cid|marker|shmarker|partner|partner_id|pid|mcid|trs|sub_id|campaign|tag|site_id|aff|adid|wid|irclickid|clickref|a8mat|a_id|vc_url|vcptn|f_id|m_id)/i.test(s || '');
+      const monParams = (s) => /[?&](aid|cid|marker|shmarker|partner|partner_id|pid|mcid|trs|sub_id|campaign|tag|site_id|aff|adid|wid|irclickid|clickref|a8mat|a_id|vc_url|vcptn|f_id|m_id|lptag|ptag|subid|awinmid|awinaffid|ranMID|ranEAID)/i.test(s || '');
+      const VIDEO_SOCIAL = /(youtube|youtu\.be|vimeo|dailymotion|instagram|facebook|twitter|x\.com|tiktok|soundcloud|spotify|pinterest)/i;
       const CLOAK = /\/(go|out|recommend|recommends|aff|affiliate|link|links|deal|deals|ref|visit|r)\//i;
       const isCloak = (s) => { try { const u = new URL(s, location.href); return u.hostname === location.hostname && CLOAK.test(u.pathname); } catch (e) { return false; } };
       const isToolLink = (h) => !!otaName(h) || isShort(h) || isCloak(h) || (monParams(h) && hostOf(h) !== location.hostname);
@@ -166,6 +179,7 @@ async function scan(context, t) {
       for (const f of document.querySelectorAll('iframe[src]')) {
         const src = f.src || ''; const nm = otaName(src);
         if (AD_MARK.test(src) || /googlesyndication|doubleclick|adservice|googleads/i.test(src)) continue; // skip ad iframes
+        if (VIDEO_SOCIAL.test(src)) continue; // YouTube/Vimeo/IG/FB embeds are NOT booking tools
         if (!(nm || isShort(src) || /widget|stay22|hotellook|tp\.media|booking|search|getyourguide/i.test(src))) continue;
         if (!vis(f)) continue; const r = f.getBoundingClientRect(); if (r.width < 80 || r.height < 60) continue;
         tag(f, 'widget', (nm || 'Affiliate') + '-виджет (iframe)', nm);
@@ -182,6 +196,7 @@ async function scan(context, t) {
         if (r.width < 120 || r.height < 60 || r.width * r.height > 1100000) continue;
         if (!el.querySelector('img,iframe,canvas,a,svg') && !PRICE.test(el.innerText || '')) continue; // not an empty hook
         if (isSocial(el.innerText || '')) continue; // sidebar LINE/social block, not a tool
+        if ([...el.querySelectorAll('iframe[src]')].some(f => VIDEO_SOCIAL.test(f.src || ''))) continue; // wraps a YouTube/IG/FB embed → not a tool
         // must carry an affiliate signal: link to a KNOWN OTA host, a price, or a provider marker.
         // (shortlink-only image banners — e.g. LINE/社群 via pse.is — are NOT enough → dropped)
         const hasOTA = [...el.querySelectorAll('a[href]')].some(a => otaName(a.href));
