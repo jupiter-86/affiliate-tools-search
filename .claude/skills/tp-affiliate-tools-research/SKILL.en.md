@@ -64,7 +64,12 @@ Build `targets-<country>.json`:
 ```bash
 node scan-tools.js targets-<country>.json <country> <locale>
 # locale: zh-TW / ja-JP / ko-KR / th-TH / en-US ...
+# headless (no visible browser window; when the user asks for "in the background"):
+HEADLESS=1 node scan-tools.js targets-<country>.json <country> <locale>
 ```
+Default is headed (channel:'chrome'): beats more anti-bot. If the user asks to keep the browser from
+popping up / run in the background — set `HEADLESS=1`. Headless downside: slightly more 403/captcha on
+aggressive sites (flag honestly); the Emerald class still won't render under automation anyway.
 Per blog the scanner auto-discovers up to 5 different pages (home + sections/articles by navigation
 clusters), loads them, **scrolls to the true bottom** (important: articles can be 100k+ px), detects tools,
 screenshots the elements, and **after each blog rewrites** `<country>-manifest.json` and
