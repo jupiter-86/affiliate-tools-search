@@ -52,6 +52,16 @@ lives there**, writes **in the country's language** (ja/ko/th/zh-TW…) **for th
 - ❌ Not of interest: purely informational sites without recommendations/monetization, OTAs/aggregators, news.
 - Borderline — flag it (language, who the author is, who it targets), don't silently drop it.
 
+🔑 **SELF-HOSTED blogs ONLY (hard scope).** We care about the **author's own site with a CMS**, where they
+**control the code** and can freely embed widgets/scripts/popups/iframes (WordPress, Ghost, own markup, and
+platforms that allow custom HTML/JS). That's where the tools we study live.
+- ❌ **Walled-garden platforms where you cannot inject third-party code are NOT of interest — skip them:**
+  Naver Blog (네이버 블로그), Brunch/Kakao (strips/nofollows external links), and any similar builder where the
+  author doesn't control the HTML/scripts. Real tools can't exist there — skip those domains.
+- Simple test: "can the author put a third-party `<script>`/widget on the page?" No → skip.
+  Unsure (Tistory, Ameba, note, blogspot, livedoor) — include only if you actually see embedded
+  widgets/scripts; otherwise prefer own domains.
+
 For each blog, record the **language** and the type (local / English-for-foreigners) — it goes into the report.
 
 ## 3. SOURCES — how to find a country's blogs (Step 1)
@@ -79,12 +89,12 @@ Procedure:
    countries (Iceland, Netherlands…) the English share is naturally higher — but still hunt for **genuinely
    local authors** (live there, write for locals), not international/expat travel sites. Failure = a shortlist
    made entirely of big English "guide for tourists" sites.
-4. **Discover the platform on the fly — NOT from a hardcoded list** (this is the universality: Iceland or any
-   country). Method: (a) search blogs in the local language; (b) if you don't know the local blog platforms —
-   **ask the results**: `WebSearch` "popular blogging platform in <country>", "<country> 旅行/여행/travel
-   bloggers", and see which **domains/platforms recur** — those are the local ones. Examples (illustration,
-   NOT a lookup table): Japan — Ameba/Hatena/note; Korea — Naver/Tistory/Brunch; Taiwan — pixnet; Thailand —
-   Blockdit. Iceland/Europe — more often own domains + social.
+4. **Take SELF-HOSTED only (own domain/CMS, author controls the code)** — see the hard scope in Step 2.
+   Walled gardens (Naver Blog, Brunch/Kakao, and similar where you can't inject a third-party `<script>`/
+   widget) **skip** — the tools we study can't exist there. Discover the platform on the fly (universality —
+   Iceland or any country): search in the local language; see which **domains recur**; keep the ones where the
+   author can actually embed code (own domains, WordPress/Ghost; Tistory/blogspot/pixnet — if you see embedded
+   widgets). A personal domain on WordPress/CMS is priority #1.
 
 Gather ~12–20 candidates; for each — a **home URL** and (ideally) one **tool-rich seed article** (hotel
 roundup / itinerary). **Local-language** query templates (substitute the country):
@@ -102,8 +112,9 @@ networks/OTAs — find and detect those (extend `OTA_MAP`/`SHORT`, Step 3a). Che
 - 🇯🇵 **Japan**: networks A8.net, ValueCommerce (バリューコマース), moshimo (もしも), Rakuten Affiliate,
   AccessTrade; OTAs Rakuten Travel (楽天トラベル), Jalan (じゃらん), Ikyu (一休), JTB, Rurubu; formats — A8
   text/banner links, Rakuten product widgets. (some already in `OTA_MAP`/`SHORT`.)
-- 🇰🇷 **Korea**: networks Coupang Partners (쿠팡파트너스), LinkPrice (링크프라이스), AdPick (애드픽); OTAs
-  Yanolja (야놀자), GoodChoice (여기어때), Interpark Tour, Hana Tour, Trip.com; platforms Naver Blog/Tistory.
+- 🇰🇷 **Korea**: networks Coupang Partners (쿠팡파트너스, `link.coupang.com`+`lptag`), LinkPrice (링크프라이스),
+  tenping/adpick; OTAs Yanolja (야놀자), GoodChoice (여기어때), MyRealTrip, Interpark, Hana Tour, Agoda via the
+  `app.ac` deeplink. ⚠️ self-hosted: take **own domains**; skip Naver Blog/Brunch.
 - 🇹🇭 **Thailand**: networks Involve Asia, AccessTrade TH; OTAs Agoda/Traveloka; platform Blockdit.
 - 🇹🇼 **Taiwan** (reference): Klook/KKday/Agoda, Travelpayouts shortlinks, iChannels 通路王, pse.is/reurl.cc.
 - **Any other country** (Iceland, etc.): the local networks/OTAs are their own — discover them via recon
@@ -118,15 +129,23 @@ it shows in the report and makes the sample balance obvious at a glance:
     "home": "https://www.nickkembel.com/", "seed": "https://www.nickkembel.com/taiwan-itinerary-1-2-3-weeks/" } ]
 ```
 
-### 3a. Partner recon — extend the OTA list for the country (key for recall)
-`OTA_MAP`/`SHORT` in `scan-tools.js` are a **SEED, not a full registry**. The scanner won't recognize an
-affiliate that isn't there (e.g. Iceland: **Guide to Iceland**, Reykjavik Excursions, a local tour platform,
-an unknown affiliate network). So BEFORE scanning:
-1. `WebSearch` "<country> travel affiliate programs", "<country> booking partners" — what OTAs/networks are used;
-2. open 2–3 candidate articles and see which **external domains** they link to repeatedly (recurring commerce
-   domains = likely affiliate);
-3. **add the found hosts** to `OTA_MAP` (with a human-readable name) and/or redirect domains to `SHORT` in
-   `scan-tools.js` — then the scanner captures them as first-class tools.
+### 3a. 🚦 MANDATORY partner recon for the country (do NOT skip — especially with no examples for the country)
+`OTA_MAP`/`SHORT` in `scan-tools.js` are a **SEED for Taiwan/West/Japan, not a full registry**. The scanner
+physically can't see an affiliate that isn't there — and every country has its own redirectors/networks/OTAs
+(Korea: `app.ac` (Agoda deeplink), `link.coupang.com`+`lptag` (Coupang Partners), `linkprice`, tenping/adpick,
+Yanolja/GoodChoice/MyRealTrip/HanaTour; Iceland: Guide to Iceland, etc.). **Without this step, new countries
+are SYSTEMATICALLY undercounted** (exactly what happened with Korea). So BEFORE scanning, ALWAYS:
+1. `WebSearch` (local + en): "<country> travel affiliate programs / networks", "<country> 제휴마케팅 /
+   アフィリエイト / 聯盟行銷", "how do <country> travel blogs monetize" — list the local **networks** and **OTAs**.
+2. Open 2–3 candidate articles (via WebFetch/Playwright) and inspect **outbound external domains** and
+   **redirect shortlinks** (recurring commerce hosts, links with tracking params = affiliate).
+3. **Add the found hosts** to `scan-tools.js`: OTAs/tour platforms → `OTA_MAP` (with a name), redirectors/
+   networks/deeplinks → `SHORT`; if a network uses a specific tracking param (e.g. `lptag`, `a8mat`) add it to
+   the `monParams` regex. Only then run the scan.
+4. If unsure whether a domain is affiliate → run with `INCLUDE_UNKNOWN=1` (Step 4): it flags suspicious
+   outbound links as `unknown`, and you confirm/add them from the screenshots (Step 5).
+This is how "a country with no examples" works: derive the language yourself → learn the partners via recon →
+extend the detector → scan. Never treat the seed list as complete.
 
 ## 4. SCAN + STEP-BY-STEP HTML BUILD (Step 2) — run the scanner
 ```bash
