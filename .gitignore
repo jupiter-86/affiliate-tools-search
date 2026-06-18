@@ -8,3 +8,5 @@ report.html
 targets-*.json
 *.log
 .DS_Store
+blogs-*.md
+*-blogs
