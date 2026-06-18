@@ -19,6 +19,9 @@ const LOCALE = process.argv[4] || 'en-US';
 const OUT = path.resolve('tools');
 fs.mkdirSync(OUT, { recursive: true });
 const CAP = 40; // max screenshotted tools per page (very long, tool-rich pages)
+// INCLUDE_UNKNOWN=1 -> also flag UNKNOWN outbound links (params or repeated commerce host) as
+// candidate "affiliate (unknown network)". Higher recall + noise — the agent validates by eye.
+const INCLUDE_UNKNOWN = process.env.INCLUDE_UNKNOWN === '1' || process.env.INCLUDE_UNKNOWN === 'true';
 
 const OTA_MAP = [
   ['agoda', 'Agoda'], ['booking.com', 'Booking'], ['klook', 'Klook'], ['kkday', 'KKday'], ['kk.day', 'KKday'],
@@ -91,7 +94,7 @@ async function scan(context, t) {
       await sleep(1500);
     }
 
-    const { cands, integrations } = await page.evaluate(({ OTA_MAP, SHORT }) => {
+    const { cands, integrations } = await page.evaluate(({ OTA_MAP, SHORT, includeUnknown }) => {
       const hostOf = (s) => { try { return new URL(s, location.href).hostname.toLowerCase(); } catch (e) { return ''; } };
       const otaName = (s) => { const h = hostOf(s); for (const [f, n] of OTA_MAP) if (h.includes(f)) return n; return null; };
       const isShort = (s) => { const h = hostOf(s); return SHORT.some(x => h.includes(x)); };
@@ -293,13 +296,36 @@ async function scan(context, t) {
         tag(el, 'sticky', 'Sticky-виджет/кнопка', otaName(el.innerHTML));
       }
 
+      // 9) UNKNOWN affiliate candidates (opt-in via INCLUDE_UNKNOWN): outbound external links to a
+      // commerce-ish host we DON'T already recognize, that either carry tracking params or repeat on
+      // the page (≥3×). High recall / noisy by design — the agent validates these by eye afterwards.
+      if (includeUnknown) {
+        const NONCOMMERCE = /(facebook|instagram|twitter|x\.com|pinterest|youtube|tiktok|google|gstatic|googleapis|wikipedia|wikimedia|maps\.|gov\b|gravatar|wp\.com|w\.org|schema\.org|paypal\.com\/cgi|line\.me|t\.me)/i;
+        const TRACK = /[?&](utm_|aff|ref|tag|partner|sub|campaign|clickid|irclickid|fbclid|gclid|cmp|source|aid|cid|pid|mid)/i;
+        const counts = {};
+        const exts = [...document.querySelectorAll('a[href]')].filter(a => { const h = hostOf(a.href); return h && h !== location.hostname && !NONCOMMERCE.test(h); });
+        for (const a of exts) counts[hostOf(a.href)] = (counts[hostOf(a.href)] || 0) + 1;
+        for (const a of exts) {
+          if (a.getAttribute('data-toolid')) continue;            // already a known tool
+          if (isToolLink(a.href)) continue;                       // recognized — handled above
+          if (!vis(a)) continue;
+          const h = hostOf(a.href);
+          const qualifies = TRACK.test(a.href) || counts[h] >= 3;  // tracking param OR repeated commerce host
+          if (!qualifies) continue;
+          const txt = (a.innerText || '').trim().replace(/\s+/g, ' ');
+          if (isCredit(txt) || isSocial(txt) || isMenu(a) || isRelated(a)) continue;
+          const box = ctxBox(a);
+          if (isMenu(box) || isRelated(box)) continue;
+          tag(box, 'unknown', 'Внешняя ссылка (?) → ' + h + (txt ? ' «' + txt.slice(0, 24) + '»' : ''), null);
+        }
+      }
       return { cands: out, integrations };
-    }, { OTA_MAP, SHORT });
+    }, { OTA_MAP, SHORT, includeUnknown: INCLUDE_UNKNOWN });
 
     res.integrations = integrations;
 
     // priority order; capture with cap + looser dedupe (keep <=2 per identical key, diff kinds kept)
-    const order = { widget: 0, banner: 1, coupon: 2, card: 3, cta: 4, block: 5, sticky: 6, link: 7 };
+    const order = { widget: 0, banner: 1, coupon: 2, card: 3, cta: 4, block: 5, sticky: 6, link: 7, unknown: 8 };
     cands.sort((a, b) => order[a.kind] - order[b.kind]);
     let n = 0; const seen = {};
     for (const c of cands) {

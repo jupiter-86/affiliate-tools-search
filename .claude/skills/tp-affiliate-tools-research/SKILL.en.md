@@ -96,13 +96,29 @@ it shows in the report and makes the sample balance obvious at a glance:
     "home": "https://www.nickkembel.com/", "seed": "https://www.nickkembel.com/taiwan-itinerary-1-2-3-weeks/" } ]
 ```
 
+### 3a. Partner recon — extend the OTA list for the country (key for recall)
+`OTA_MAP`/`SHORT` in `scan-tools.js` are a **SEED, not a full registry**. The scanner won't recognize an
+affiliate that isn't there (e.g. Iceland: **Guide to Iceland**, Reykjavik Excursions, a local tour platform,
+an unknown affiliate network). So BEFORE scanning:
+1. `WebSearch` "<country> travel affiliate programs", "<country> booking partners" — what OTAs/networks are used;
+2. open 2–3 candidate articles and see which **external domains** they link to repeatedly (recurring commerce
+   domains = likely affiliate);
+3. **add the found hosts** to `OTA_MAP` (with a human-readable name) and/or redirect domains to `SHORT` in
+   `scan-tools.js` — then the scanner captures them as first-class tools.
+
 ## 4. SCAN + STEP-BY-STEP HTML BUILD (Step 2) — run the scanner
 ```bash
 node scan-tools.js targets-<country>.json <country> <locale>
 # locale: zh-TW / ja-JP / ko-KR / th-TH / en-US ...
 # headless (no visible browser window; when the user asks for "in the background"):
 HEADLESS=1 node scan-tools.js targets-<country>.json <country> <locale>
+# + catch UNKNOWN affiliates (external links with params / repeated commerce hosts):
+INCLUDE_UNKNOWN=1 node scan-tools.js targets-<country>.json <country> <locale>
 ```
+`INCLUDE_UNKNOWN=1` flags `unknown` candidates ("external/unknown (?) — to review"). It's a deliberately
+"noisy" wide net: then **YOU validate them by eye** (Step 5) and either confirm (better — add the host to
+`OTA_MAP` and re-scan so it gets a precise type) or discard. Turn it on when you need recall / an unfamiliar
+market (Iceland, etc.).
 Default is headed (channel:'chrome'): beats more anti-bot. If the user asks to keep the browser from
 popping up / run in the background — set `HEADLESS=1`. Headless downside: slightly more 403/captcha on
 aggressive sites (flag honestly); the Emerald class still won't render under automation anyway.
@@ -140,8 +156,19 @@ HTML page yourself via the Write tool, pass the body as JSON `{title, rows:[{"#"
 (otherwise it blocks the Write with a reason). The rich screenshot report is produced by `gen-html.js`
 directly (bypassing the hook) — the hook is the "no-empty-page" guard for manual HTML outputs.
 
-**Eyes.** Heuristics make mistakes — open a few fresh screenshots and confirm they're really tools; on false
-positives, tweak the filters in `scan-tools.js`.
+**(c) YOU are the final noise filter (the main validation layer).** The scanner is tuned for recall
+(especially with `INCLUDE_UNKNOWN=1`); you create cleanliness from the screenshots. This is not optional —
+it's part of the process:
+- **Open the `tools/` screenshots** of every `unknown` and any doubtful candidate (via Read);
+- for each decide: **(1) a real booking/affiliate tool** → confirm; if it's a recognizable OTA/network —
+  **add the host to `OTA_MAP`/`SHORT` and re-scan** (so it gets a precise type, not `unknown`); **(2) noise**
+  (an ordinary external link, social, ad, nav, credit) → **drop it** (remove from the manifest / exclude via a
+  filter in `scan-tools.js`);
+- **unconfirmed `unknown`s must not appear in the final report** — either reclassify to a real type or remove.
+  If you keep one as tentative, label it clearly "candidate, unconfirmed".
+- Heuristics also err in normal mode — spot-check screenshots of known types too; on systematic false
+  positives, fix the filters in `scan-tools.js` and re-scan.
+Net: wide net (B) + your visual validation = high recall without noise in the report.
 
 ## 6. GENERATION — always HTML
 - The main report is built by `gen-html.js` (module + CLI). Columns: **# · Blog (name/URL/page types) ·

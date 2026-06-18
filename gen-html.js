@@ -13,6 +13,7 @@ const path = require('path');
 const KIND = {
   widget: 'Виджет (iframe)', banner: 'Баннер', card: 'Инлайн-карточка', cta: 'CTA-кнопка',
   link: 'Инлайн-ссылка', coupon: 'Купон/промо', block: 'Аффилиат-блок', sticky: 'Sticky',
+  unknown: 'Внешняя/неизвестная (?) — на проверку',
 };
 const esc = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
