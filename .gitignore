@@ -11,3 +11,12 @@ targets-*.json
 blogs-*.md
 *-blogs
 .scanpid
+# output/working artifacts (never commit)
+tthumbs/
+**/tthumbs/
+*-clean/
+jp-clean/
+*manifest*.json
+*.raw.json
+.scanpid*
+*-scan.log
