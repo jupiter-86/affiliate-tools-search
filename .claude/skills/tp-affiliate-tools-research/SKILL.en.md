@@ -54,6 +54,17 @@ lives there**, writes **in the country's language** (ja/ko/th/zh-TW…) **for th
   ratio in Step 3), and only if the author is genuinely local / lives there. Don't make the whole report out
   of them — that's unrepresentative.
 - ❌ Not of interest: purely informational sites without recommendations/monetization, OTAs/aggregators, news.
+- ❌ **NO coupon sites / deal aggregators / "offer-roundup" sites (hard gate).** These are sites whose CORE
+  is a feed of promo codes / coupons / "deals" across many brands (often not even travel), not original
+  travel content. Symptoms: homepage = a catalog of store coupons/discounts; no personal author/itineraries/
+  place reviews; "travel" is just one category next to electronics/clothing; domain/name built around
+  *coupon / promo / deals / discount / savings / benefits / zone*. Caught offenders: **WannaZone, benefitshub**
+  — they carry travel coupons, but they're discount aggregators, not blogs; including them **skews the
+  results** (coupons there aren't a blogger's tool, they're the site's whole product).
+  - 🔑 **Positive blog criterion:** the site has its **own travel content** (guides, itineraries, place/
+    hotel/activity reviews, personal "where to go / where to stay" recommendations). A blog may have
+    coupons/promos — but as **ONE monetization tool on top of content**, not as the site's substance. No
+    editorial travel content beyond coupon/offer feeds → it's an aggregator, **exclude it**.
 - Borderline — flag it (language, who the author is, who it targets), don't silently drop it.
 
 🔑 **SELF-HOSTED blogs ONLY (hard scope).** We care about the **author's own site with a CMS**, where they
@@ -218,6 +229,11 @@ it's part of the process:
   If you keep one as tentative, label it clearly "candidate, unconfirmed".
 - Heuristics also err in normal mode — spot-check screenshots of known types too; on systematic false
   positives, fix the filters in `scan-tools.js` and re-scan.
+- 🚫 **"Blog, not a coupon site" gate — check at the SITE level, not per screenshot.** Before keeping a blog
+  in the report, confirm (from its homepage + page types) it's an authored travel site, not a discount/offer
+  aggregator (see the hard gate in Step 2). If a "blog" is entirely a feed of coupons/deals across brands
+  with no original guides/itineraries/place reviews → **drop the whole site from the manifest** (not just
+  individual screenshots). Otherwise coupon aggregators (like WannaZone / benefitshub) skew the entire slice.
 Net: wide net (B) + your visual validation = high recall without noise in the report.
 
 ## 6. GENERATION — always HTML
