@@ -123,6 +123,14 @@ Procedure:
    author can actually embed code (own domains, WordPress/Ghost; Tistory/blogspot/pixnet — if you see embedded
    widgets). A personal domain on WordPress/CMS is priority #1.
 
+🎯 **SEARCH FOR TRAVEL CONTENT, NOT MONETIZATION (the Korea lesson — don't repeat it).** Queries built on
+monetization keywords (`제휴`/`쿠폰`/`할인코드`/`优惠`/`coupon`/`promo code`/`affiliate`) **systematically push
+the sample into coupon sites and discount aggregators** — those words are in every one of their headlines, so
+they rank first. Search by **content**: itineraries, hotel reviews, travel diaries of real people, "what to
+see / where to stay". You'll find the monetization tools LATER, on the blogs themselves (Step 4) — not by
+searching the word "coupon". Monetization keywords belong **only** in partner recon (Step 3a), NOT as a way to
+find blogs.
+
 Gather ~12–20 candidates; for each — a **home URL** and (ideally) one **tool-rich seed article** (hotel
 roundup / itinerary). **Local-language** query templates (substitute the country):
 - Japan: "日本 旅行 ブログ ホテル 予約", "<city> 観光 ブログ おすすめ", "日本人 旅行ブロガー 人気".
@@ -130,8 +138,9 @@ roundup / itinerary). **Local-language** query templates (substitute the country
 - Thailand: "รีวิว ที่พัก บล็อก เที่ยว <province>", "บล็อกเกอร์ ท่องเที่ยว ไทย".
 - Taiwan (the reference): "台灣 旅遊 部落格 推薦", "<city> 自由行 部落客", "飯店 訂房 部落格".
 - English (top-up, minority): "best local <country> travel bloggers", "<country> travel blog (in <language>)".
-- hooks: hotel reviews, itineraries (行程/일정/itinerary), "things to do", roundups, Klook-vs-KKday comparisons,
-  coupon pages (折扣碼/쿠폰/优惠/coupon). Platforms above.
+- hooks (content, not monetization): hotel reviews, itineraries (行程/일정/itinerary), "things to do",
+  roundups, travel diaries/후기. Platforms above. ⚠️ Do **not** add coupon keywords (折扣碼/쿠폰/优惠/coupon)
+  to blog-finding queries — they surface coupon sites; record coupons later, on the travel blogs you find.
 Don't invent domains — verify they open. For each candidate record its language and local/foreign type.
 
 🚦 **Before adding a candidate to `targets-<country>.json` — open its homepage and confirm it's actually a
@@ -265,6 +274,14 @@ Net: wide net (B) + your visual validation = high recall without noise in the re
   base64** (cross-platform resize via Playwright-canvas — no `sips`/`sharp`), deduped per blog. The file is
   self-contained — opens anywhere.
 - Rebuild manually: `node gen-html.js <country>-manifest.json <country>-blogs.html "<Title>"`.
+- ✅ **Record a valid travel blog HONESTLY even if it has zero tools.** "0 tools" is a valid result (the blog
+  exists, no monetization found), not a reason to drop it or to pad the sample with coupon sites. Don't tune
+  the report toward "more tools".
+- 🗂️ **Coupon sites / aggregators — NOT in the main blog table, but in a separate observation section.** You
+  will run into coupon sites / discount aggregators; don't count them as blogs and don't silently delete them
+  — put **a couple of illustrative examples with screenshots into a separate "Observation: coupon sites /
+  aggregators" section** (bottom of the report) as market context, apart from the authored travel blogs. Keeps
+  the slice honest and unskewed.
 - (Optional) a coupons-only sub-report with translations — on request: a separate HTML where each card =
   screenshot + original + translation (you provide the translation; don't hardcode a per-country dictionary).
 
