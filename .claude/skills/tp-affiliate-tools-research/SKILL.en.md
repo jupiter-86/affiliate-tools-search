@@ -65,6 +65,15 @@ lives there**, writes **in the country's language** (ja/ko/th/zh-TW…) **for th
     hotel/activity reviews, personal "where to go / where to stay" recommendations). A blog may have
     coupons/promos — but as **ONE monetization tool on top of content**, not as the site's substance. No
     editorial travel content beyond coupon/offer feeds → it's an aggregator, **exclude it**.
+- ❌ **NO non-travel sites: content farms / MFA ("made for affiliate") / off-topic or repurposed-domain sites
+  (hard gate).** The site must be **about travel** (travel is its main subject), not a "general blog about
+  everything" where a travel post happens to land. Symptoms: mixed unrelated topics (smartphones/finance/
+  insurance/loans next to travel); domain **unrelated to travel** (a random acronym+year, a conference name,
+  an expired/repurposed domain); thin keyword-targeted SEO posts (often freshly mass-published) existing only
+  to host affiliate links/promo codes. Caught offender: **`icems2021.com`** (posed as a Korean travel blog
+  "지식채널", actually a content farm on the ICEMS-2021 conference domain: Galaxy S23 posts + Trip.com/Klook
+  promo codes). Simple test: **open the homepage / a few posts — is this an author writing about travel, or an
+  SEO-page generator on random topics?** The latter → **exclude it**.
 - Borderline — flag it (language, who the author is, who it targets), don't silently drop it.
 
 🔑 **SELF-HOSTED blogs ONLY (hard scope).** We care about the **author's own site with a CMS**, where they
@@ -124,6 +133,14 @@ roundup / itinerary). **Local-language** query templates (substitute the country
 - hooks: hotel reviews, itineraries (行程/일정/itinerary), "things to do", roundups, Klook-vs-KKday comparisons,
   coupon pages (折扣碼/쿠폰/优惠/coupon). Platforms above.
 Don't invent domains — verify they open. For each candidate record its language and local/foreign type.
+
+🚦 **Before adding a candidate to `targets-<country>.json` — open its homepage and confirm it's actually a
+TRAVEL blog** (travel is the main subject, with authored content: guides/itineraries/reviews), and **not**:
+a coupon site / discount aggregator, a mixed-topic content farm/MFA, or a repurposed/expired domain with
+keyword-targeted SEO posts (see the hard gates in Step 2). WebSearch happily surfaces such sites because they
+carry a travel post with a promo code (that's how `icems2021.com` — a content farm on a conference domain —
+got into the Korea slice). Don't trust "it turned up for a travel query" — **verify the site's topic by eye
+before scanning.**
 
 **The local monetization stack ≠ the Western one (Booking/Stay22/Klook).** Local blogs monetize via THEIR
 networks/OTAs — find and detect those (extend `OTA_MAP`/`SHORT`, Step 3a). Cheat-sheet (NOT exhaustive):
@@ -229,11 +246,17 @@ it's part of the process:
   If you keep one as tentative, label it clearly "candidate, unconfirmed".
 - Heuristics also err in normal mode — spot-check screenshots of known types too; on systematic false
   positives, fix the filters in `scan-tools.js` and re-scan.
-- 🚫 **"Blog, not a coupon site" gate — check at the SITE level, not per screenshot.** Before keeping a blog
-  in the report, confirm (from its homepage + page types) it's an authored travel site, not a discount/offer
-  aggregator (see the hard gate in Step 2). If a "blog" is entirely a feed of coupons/deals across brands
-  with no original guides/itineraries/place reviews → **drop the whole site from the manifest** (not just
-  individual screenshots). Otherwise coupon aggregators (like WannaZone / benefitshub) skew the entire slice.
+- 🚫 **"Real travel blog" gate — check at the SITE level, not per screenshot.** Before keeping a blog in the
+  report, confirm (from its homepage + page types) it's an **authored travel site**, not: (1) a discount/offer
+  aggregator; (2) a mixed-topic/off-topic content farm/MFA or repurposed domain (see both hard gates in
+  Step 2). If a "blog" is entirely a feed of coupons/deals across brands, **or** an SEO-page generator on
+  random topics (smartphones/finance/insurance + a stray travel post with a promo code) → **drop the whole
+  site from the manifest** (not just individual screenshots). That's how **WannaZone / benefitshub** (coupon
+  sites) and **`icems2021.com`** (a content farm on a conference domain) slipped in — they skew the whole slice.
+  - 🔔 The scanner itself prints `⚠ REVIEW <slug>: only N thin link/coupon tool(s)…` for blogs with the thin
+    content-farm signature (only thin link/coupon, no widgets/cards/cta/integrations — like icems2021). It's a
+    **manual-review signal, not auto-drop**: open the site and decide by the gates above. (Coupon aggregators
+    with a rich tool set are NOT caught this way — you exclude those by judging the site's topic.)
 Net: wide net (B) + your visual validation = high recall without noise in the report.
 
 ## 6. GENERATION — always HTML

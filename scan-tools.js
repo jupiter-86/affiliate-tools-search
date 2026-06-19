@@ -495,6 +495,19 @@ async function discoverPages(context, t) {
     }
     out.push(blog);
     await flush(); // <-- HTML + manifest updated as soon as this blog is done
+    // Non-blocking content-farm / not-a-travel-blog signal (see SKILL Step 2 hard gate).
+    // icems2021.com slipped in as a Korea "blog" but is a repurposed-domain content farm:
+    // every page yielded ONLY a thin discount-code link, no widgets/cards/cta/integrations.
+    // Flag that structural signature for manual review — never auto-drop (judgment is the human's).
+    {
+      const allTools = blog.pages.flatMap(p => p.tools);
+      const allInt = blog.pages.flatMap(p => p.integrations);
+      const RICH = ['widget', 'card', 'cta', 'banner', 'block', 'sticky'];
+      const hasRich = allTools.some(x => RICH.includes(x.kind)) || allInt.length > 0;
+      if (!hasRich && allTools.length <= blog.pages.length) {
+        process.stderr.write(`  ⚠ REVIEW ${t.slug}: only ${allTools.length} thin link/coupon tool(s) across ${blog.pages.length} page(s), no widgets/cards/cta/integrations — verify this is a real TRAVEL BLOG, not an off-topic content-farm/coupon-aggregator (e.g. icems2021). See SKILL Step 2/5.\n`);
+      }
+    }
     process.stderr.write(`done ${t.slug}: ${blog.pages.length} pages, ${blog.pages.reduce((s, p) => s + p.tools.length, 0)} shots — wrote ${HTML}\n`);
   }
   await thumbPage.close().catch(() => {});
